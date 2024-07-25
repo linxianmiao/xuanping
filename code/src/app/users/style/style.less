@@ -1,0 +1,287 @@
+@import '~@uyun/everest-styles/index';
+
+.user-select-component-modal {
+  .u4-modal-body {
+    padding: 0;
+  }
+}
+.user-select-component-modal .u4-modal-body {
+  max-height: 600px;
+}
+.user-select-choose {
+  padding: 120px 0;
+}
+.user-select-choose-btn {
+  line-height: 70px;
+  width: 400px;
+  margin: 30px auto;
+  background: @page-bg;
+  padding: 0 10px 0 20px;
+  border-radius: 2px;
+  font-size: 16px;
+  color: @text-color;
+  border: 1px solid @border-color;
+  cursor: pointer;
+  .uyicon {
+    font-size: 24px;
+    margin-top: 23px;
+  }
+  .uyicon-right {
+    float: right;
+    color: @heading-color;
+  }
+}
+.user-select-choose-btn:hover {
+  background: @page-bg;
+  border: 1px solid @border-color;
+  > span {
+    color: @text-color;
+  }
+}
+.add-user-modal .u4-modal-body {
+  padding: 0;
+}
+.choose-modal {
+  .u4-tabs-bar {
+    width: 460px;
+  }
+  h3 {
+    color: @text-color;
+    line-height: 50px;
+    font-weight: 400;
+    border-bottom: 1px solid @border-color;
+    padding: 0 30px;
+    font-size: 16px;
+  }
+  .choose-user {
+    overflow: hidden;
+    padding: 15px;
+    width: 600px;
+  }
+  .u4-tabs {
+    color: @primary-color;
+  }
+  .u4-tabs-bar {
+    border-bottom: 1px solid @border-color;
+  }
+  .u4-tabs-nav .u4-tabs-tab-active {
+    color: @text-color;
+  }
+  .u4-tabs-ink-bar {
+    background-color: @header-bg;
+  }
+  .u4-tabs-tabpane {
+    overflow: hidden;
+  }
+  .transfer-list {
+    background: @page-bg;
+    width: 220px;
+    float: left;
+    height: 325px;
+    border: 1px solid @border-color;
+    position: inherit;
+    overflow: initial;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 20px;
+    .u4-checkbox-wrapper {
+      margin-right: 0;
+    }
+  }
+  .user-search {
+    position: relative;
+    color: @text-color;
+    width: 200px;
+    height: 32px;
+    margin: 10px 10px 0;
+    padding: 0;
+    .iconfont {
+      position: absolute;
+      z-index: 1;
+      line-height: 28px;
+      top: 0;
+      left: 6px;
+      color: @text-color;
+    }
+    .uyicon-cross-circle {
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      z-index: 10;
+    }
+    .u4-input {
+      background: @page-bg;
+      line-height: 18px;
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+  }
+  .group-crumb {
+    margin: 10px 0;
+  }
+  .u4-breadcrumb {
+    padding: 0 10px;
+  }
+  .u4-breadcrumb > span {
+    color: @text-color;
+    cursor: pointer;
+  }
+  .u4-breadcrumb > span:last-child {
+    color: @text-color;
+    font-weight: 400;
+    cursor: auto;
+  }
+  .item-title {
+    margin: 15px 0 8px 30px;
+    color: #6ac1ff;
+    position: relative;
+    overflow: hidden;
+    .item-title-right {
+      float: right;
+      margin-right: 22px;
+    }
+    .uyicon {
+      position: absolute;
+      cursor: pointer;
+      color: #aaaaaa;
+      right: 10px;
+      font-size: 14px;
+      transform: scale(0.5) rotate(0deg);
+      top: -1px;
+    }
+    .uyicon-caret-down {
+      top: 4px;
+    }
+  }
+  .item-list {
+    width: 100%;
+    li.item_li {
+      line-height: 32px;
+      padding: 0 10px;
+      position: relative;
+      margin: 0;
+      color: #fff;
+      .item_name {
+        display: inline-block;
+        position: relative;
+        left: 20px;
+        width: 174px;
+        cursor: pointer;
+      }
+      .item_bumen_name {
+        display: inline-block;
+        position: relative;
+        left: 28px;
+        cursor: pointer;
+      }
+      .name {
+        display: inline-block;
+        position: relative;
+        width: 140px;
+        word-break: break-all;
+        cursor: pointer;
+        line-height: 16px;
+        color: @text-color;
+      }
+      .num {
+        color: @text-color;
+      }
+      .uyicon-check {
+        display: none;
+      }
+    }
+    li.item_li.selected {
+      cursor: not-allowed;
+      background: @page-bg;
+      .uyicon-check {
+        cursor: not-allowed;
+        display: block;
+        color: @text-color;
+        position: absolute;
+        left: -20px;
+        top: 32%;
+        font-size: 14px;
+      }
+    }
+    li.selected_item {
+      line-height: 32px;
+      padding: 0 10px 0 20px;
+      position: relative;
+      color: @text-color;
+      &:first-child {
+        margin-top: 20px;
+      }
+      .name {
+        display: inline-block;
+        position: relative;
+        width: 160px;
+        word-break: break-all;
+        cursor: pointer;
+        line-height: 16px;
+      }
+      .icon-cha {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        cursor: pointer;
+      }
+    }
+    li.selected_item:hover {
+      background: @page-bg;
+      .icon-cha {
+        display: block;
+      }
+    }
+  }
+  > .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background: @page-bg;
+    border-top: 1px solid @border-color;
+    .u4-btn {
+      margin: 0 8px;
+    }
+  }
+  .all-list {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    button {
+      min-width: 96px;
+    }
+    button:first-child {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .footer {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      background: #145e99;
+      border-top: 1px solid #135991;
+      .u4-btn {
+        &:last-child {
+          margin-left: 15px;
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+.choose-modal.userGroup {
+  .all-list {
+    display: none;
+  }
+  .transfer-list {
+    width: 260px;
+    margin: 0 10px;
+  }
+  .u4-tabs-bar {
+    margin-left: 10px;
+    width: 100%;
+    width: 550px;
+  }
+}

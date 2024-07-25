@@ -1,0 +1,153 @@
+.all-scroll {
+  overflow-x: auto;
+}
+.subprocess-tip {
+  margin-left: 8px;
+  color: @text-color-secondary;
+  .uyunicon-exclamation-circle {
+    margin-right: 4px;
+  }
+}
+.sub-task-header,
+.sub-task-body {
+  display: flex;
+  &.scroll {
+    .space {
+      flex-basis: 40px;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+    .order {
+      flex-basis: 48px;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    .custom-columns {
+      flex-basis: 1200px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      display: flex;
+      > div {
+        flex: 1;
+      }
+    }
+    .group-sub {
+      flex-basis: 950px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      .u4-tag {
+        margin-left: 8px;
+      }
+    }
+    .operation-subtask {
+      flex-basis: 150px;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+  }
+  .space {
+    flex: 1;
+  }
+  .order {
+    flex: 2;
+  }
+  .custom-columns {
+    flex: 17;
+    display: flex;
+    > div {
+      flex: 1;
+    }
+    > div.link-div {
+      flex: 1.5;
+    }
+  }
+  .operation-subtask {
+    flex: 3;
+  }
+}
+.sub-task-header {
+  margin-top: 5px;
+  > div {
+    background-color: @header-bg;
+    padding: 8px 0;
+  }
+  .sub-task-header {
+    .custom-columns {
+      > div {
+        background-color: @header-bg;
+        padding: 5px 0;
+      }
+    }
+  }
+}
+.sub-task-body {
+  min-height: 32px;
+  > div {
+    border-bottom: 1px solid @border-color;
+  }
+  display: flex;
+  cursor: move;
+  > div {
+    box-sizing: border-box;
+    padding: 8px 0;
+  }
+  .group-sub {
+    flex: 19;
+    .u4-tag {
+      margin-left: 8px;
+    }
+  }
+  .add-cub {
+    margin-right: 10px;
+  }
+
+  .order {
+    > div {
+      position: absolute;
+      left: 20px;
+    }
+  }
+  .custom-columns {
+    > div {
+      padding-left: 3px;
+    }
+  }
+
+  .parallel-icon {
+    padding-left: 5px;
+    position: relative;
+  }
+  .parallel-icon::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    border-bottom: 1px solid @disabled-color;
+    border-left: 1px solid @disabled-color;
+  }
+  .parallel-icon2 {
+    padding-left: 5px;
+    position: relative;
+  }
+  .parallel-icon2::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -6px;
+    top: 0;
+    border-bottom: 1px solid @disabled-color;
+    border-left: 1px solid @disabled-color;
+  }
+  .parallel-ticketnum {
+    padding-left: 10px;
+  }
+  .btn-link {
+    padding: 2px;
+  }
+}

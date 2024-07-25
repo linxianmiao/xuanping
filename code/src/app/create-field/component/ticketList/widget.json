@@ -1,0 +1,9 @@
+{
+  "path":"/itsm",
+  "icon":"iconfont icon-liebiaomoshi",
+  "name": "ticketList",
+  "type":"ticketList",
+  "fieldTypeName_en":"ticketList",
+  "fieldTypeName_zh":"工单列表"
+}
+

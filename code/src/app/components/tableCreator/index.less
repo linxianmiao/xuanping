@@ -1,0 +1,205 @@
+@import '~@uyun/everest-styles/index';
+
+.tc-table.u4-table {
+  overflow-x: auto;
+  table {
+    tr {
+      th,
+      td {
+        // min-width: 140px;
+      }
+      th.extra-cell,
+      td.extra-cell {
+        position: sticky;
+        right: 0;
+        min-width: 20px;
+        padding: 0;
+        background: @page-bg;
+        border: none;
+
+        & > .uyunicon {
+          font-size: 14px;
+          margin-left: 4px;
+          color: @text-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.form-table {
+  .u4-table-tbody {
+    .u4-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+.mgr-b-5 {
+  margin-bottom: 10px;
+}
+// 列配置中
+.tc-table.column-config-table {
+  table {
+    tr {
+      th.extra-cell,
+      td.extra-cell {
+        background-color: @page-bg;
+      }
+    }
+
+    tr.dragging {
+      background-color: @header-bg;
+      td:not(.extra-cell) {
+        opacity: 0;
+      }
+    }
+
+    tbody {
+      tr {
+        cursor: move;
+
+        td.can-drop-top {
+          border-top: 2px dashed @primary-color;
+        }
+        td.can-drop-bottom {
+          border-bottom: 2px dashed @primary-color;
+        }
+      }
+    }
+  }
+}
+// 工单中
+#ticket-forms-wrap {
+  .tc-table.u4-table {
+    table {
+      tr {
+        th.extra-cell,
+        td.extra-cell {
+          background-color: @page-bg;
+        }
+      }
+    }
+  }
+}
+
+.label-required {
+  &:before {
+    content: '*';
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 12px;
+    color: #ff4848;
+    line-height: 1;
+  }
+}
+
+.tc-content-form {
+  & > div {
+    position: relative;
+    margin-bottom: 10px;
+    & > u4-btn {
+      display: inline-block;
+    }
+    & > .tc-content-form-content {
+      margin-right: 20px;
+      padding: 10px;
+      background-color: @header-bg;
+    }
+
+    & > .tc-content-form-extra {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0;
+      width: 20px;
+      min-width: 20px;
+      & > .uyunicon {
+        display: block;
+        margin-top: 14px;
+        margin-left: 4px;
+        color: @text-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#tc-content {
+  .u4-form-item {
+    margin-bottom: 0;
+  }
+  .ticket-form-field-attachifle-wrap {
+    display: block;
+    .ticket-form-field-attachifle-fileTemplate-list {
+      display: block;
+    }
+  }
+
+  table {
+    table-layout: fixed;
+
+    th {
+      .required-item-icon {
+        color: #ff4848;
+      }
+      .required-item {
+        img {
+          width: 16px;
+          margin-top: -3px;
+        }
+      }
+    }
+  }
+
+  .error-span {
+    color: #ff4848;
+  }
+}
+
+.extra-col {
+  text-align: left;
+  & > .uyunicon {
+    font-size: 16px;
+    color: @text-color;
+    cursor: pointer;
+  }
+  &.operate-col {
+    text-align: left;
+  }
+}
+.tip-icon {
+  color: @text-color-secondary;
+}
+
+// 拖拽layer
+.tc-drag-layer-wrapper {
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 868px;
+
+  .tc-drag-layer-content {
+    border: 1px dashed @primary-color;
+    table {
+      td {
+        background: rgba(244, 247, 253, 0.7), rgba(26, 67, 114, 0.7);
+      }
+    }
+  }
+}
+
+.table-cell-form-item.u4-form-item {
+  margin-bottom: 0;
+
+  .has-error {
+    position: relative;
+
+    .u4-form-explain {
+      position: absolute;
+      bottom: -11px;
+      word-break: keep-all;
+    }
+  }
+}

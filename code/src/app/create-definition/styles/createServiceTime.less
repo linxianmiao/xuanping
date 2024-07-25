@@ -1,0 +1,55 @@
+@import '~@uyun/everest-styles/index';
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.calc-100-50 {
+  width: calc(~'100% - 50px') !important;
+  .u4-select-selection-selected-value .time-policy-select-list-item:hover {
+    i.iconfont {
+      display: none !important;
+    }
+  }
+}
+.horizontal-form-custom {
+  margin-bottom: 3px;
+  .u4-form-item-label {
+    display: inline-block;
+  }
+  .u4-form-item-control-wrapper {
+    display: inline-block;
+  }
+  .u4-form-item-children {
+    top: 0;
+    left: 3px;
+  }
+}
+.time-policy-select-list-item {
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    i.iconfont {
+      display: block;
+    }
+  }
+  i.iconfont {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+.form-item-appointed-time {
+  .has-error {
+    .u4-input {
+      z-index: 1;
+    }
+    .u4-input-group-addon {
+      .u4-select {
+        .u4-select-arrow {
+          color: @disabled-color;
+        }
+      }
+    }
+  }
+}

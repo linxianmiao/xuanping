@@ -1,0 +1,47 @@
+@import "~@uyun/everest-styles/index";
+
+@content-width: 304px;
+
+.overlay-wrapper {
+  .content {
+    width: @content-width;
+    section {
+      header {
+        font-weight: bold;
+        color: @text-color;
+        padding: 8px 0;
+        border-bottom: 1px solid @border-color;
+        margin-bottom: 10px;
+        span {
+          color: @hits-color;
+          font-weight: normal;
+        }
+      }
+      .sorter-wrapper {
+        border: 1px solid @border-color;
+        padding-top: 8px;
+        padding-left: 8px;
+        max-height: 100px;
+        overflow: auto;
+        .tag {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .check-group {
+      max-height: 300px;
+      overflow: auto;
+      .checkbox-wrapper {
+        margin-bottom: 5px;
+        .check-name {
+          width: @content-width - 214px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

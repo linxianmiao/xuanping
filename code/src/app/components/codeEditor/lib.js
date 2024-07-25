@@ -1,0 +1,16 @@
+import CodeMirror from 'codemirror'
+import 'codemirror/addon/display/placeholder'
+import 'codemirror/mode/javascript/javascript'
+import 'codemirror/mode/shell/shell'
+import 'codemirror/mode/python/python'
+import 'codemirror/mode/vbscript/vbscript'
+import 'codemirror/mode/groovy/groovy'
+import 'codemirror/mode/yaml/yaml'
+import 'codemirror/mode/powershell/powershell'
+import './batch'
+import 'codemirror/lib/codemirror.css'
+import 'codemirror/theme/monokai.css'
+import 'codemirror/theme/eclipse.css'
+import 'codemirror/theme/erlang-dark.css'
+
+export default CodeMirror

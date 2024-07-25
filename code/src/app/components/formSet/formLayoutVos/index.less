@@ -1,0 +1,128 @@
+@import '~@uyun/everest-styles/index';
+@import '~@uyun/components/lib/style/mixins/scrollbar';
+
+.form-set-formLayoutVos {
+  width: 100%;
+  height: 100%;
+  .u4-form-item {
+    margin-bottom: 0;
+  }
+  .form-set-formLayoutVos-drag {
+    position: relative;
+    float: left;
+    width: 205px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .form-set-formLayoutVos-formLayout {
+    height: 100%;
+    overflow-y: hidden;
+    padding-left: 10px;
+    transition: all 0.3s;
+    .small-scrollbar;
+    .form-layout-wrap {
+      width: 100%;
+      height: 100%;
+      margin-right: 0;
+      &.active {
+        width: calc(100% - 210px);
+      }
+      transition: all 0.3s;
+      overflow-y: scroll;
+    }
+  }
+  .form-set-formLayoutVos-side {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    height: 94%;
+    width: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    transition: width 0.3s;
+    z-index: 20;
+    .side-columns {
+      .u4-checkbox-wrapper {
+        width: 100%;
+      }
+    }
+    &.active {
+      width: 220px;
+      opacity: 1;
+      border-left: 1px solid @divider-color;
+      background: @light-bg;
+      color: @text-color;
+      header {
+        display: flex;
+        justify-content: space-between;
+        background: @header-bg;
+        padding: 0 16px;
+        height: 40px;
+        line-height: 40px;
+        i {
+          cursor: pointer;
+          transform: scale(0.75);
+        }
+      }
+      section {
+        padding: 16px;
+      }
+    }
+  }
+}
+.formset-layout-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  .u4-picker.u4-picker-disabled,
+  .u4-input[disabled],
+  .u4-input-affix-wrapper-disabled,
+  .u4-input-number-disabled,
+  .u4-select-disabled.u4-select:not(.u4-select-customize-input) .u4-select-selector,
+  .u4-select-multiple.u4-select-disabled.u4-select:not(.u4-select-customize-input)
+    .u4-select-selector,
+  .u4-form-item:not(.ticket-field) .pre-wrap.disabled-ticket-form {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .btn-item {
+    &.verticalLabel {
+      height: 68px;
+    }
+    &.top-btn {
+      .u4-form-item-control-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    &.bottom-btn {
+      .u4-form-item-control-wrapper {
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+      }
+    }
+    &.middle-btn {
+      .u4-form-item-control-wrapper {
+        position: absolute;
+        top: 24px;
+        bottom: 0;
+      }
+    }
+  }
+}
+html:not(.blue) {
+  .formset-layout-wrap {
+    .u4-input[disabled],
+    .u4-radio-disabled + span,
+    .u4-select-disabled.u4-select-multiple .u4-select-selection-item,
+    .u4-input-number-disabled,
+    .u4-select-disabled.u4-select:not(.u4-select-customize-input) .u4-select-selector,
+    .u4-picker-input > input[disabled] {
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import '~@uyun/everest-styles/index';
+:global {
+  .add-padding {
+    padding-top: 12px;
+  }
+}
+
+.trigger-form {
+  padding-bottom: 20px;
+  :global {
+    .u4-dropdown {
+      max-height: 550px;
+      overflow: auto;
+    }
+
+    .u4-dropdown-menu-submenu-title,
+    .u4-dropdown-menu-item {
+      padding: 7px 15px 7px 30px;
+    }
+
+    .user-list-menu-item {
+      position: relative;
+      i {
+        position: absolute;
+        right: 10px;
+        top: -2px;
+      }
+    }
+
+    .ul-menu-item {
+      background: @page-bg;
+    }
+
+    .line1,
+    .line2 {
+      padding: 7px 15px 7px 15px;
+    }
+    .line1:hover,
+    .line2:hover {
+      cursor: inherit;
+      background: none;
+    }
+  }
+}
+
+.tip {
+  margin-left: 10px;
+  color: @hits-color;
+}
+
+.hits {
+  color: @hits-color;
+}

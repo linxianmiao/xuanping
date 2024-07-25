@@ -1,0 +1,20 @@
+export default [
+  'fromType',
+  'keyInfo',
+  'source',
+  'status',
+  'overdue',
+  'priority',
+  'name',
+  'viewName',
+  'viewId',
+  'extParams',
+  'alertId',
+  'ticketSource',
+  'headerInfo',
+  'hideHeader',
+  'hideHead',
+  'hideMenu',
+  'sandboxId',
+  'fieldCode'
+]

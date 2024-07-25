@@ -1,0 +1,156 @@
+@import '~@uyun/everest-styles/index';
+
+// 滚动条样式
+.scrollbar() {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    border-width: 0;
+    background-color: transparent;
+  }
+}
+
+.mbt {
+  display: flex;
+  height: 100%;
+
+  .mbt-left {
+    width: 160px;
+    border-right: 1px solid @border-color;
+    background-color: @component-background;
+
+    .mbt-model-type-list-wrap {
+      height: 100%;
+      overflow-y: auto;
+      .scrollbar();
+
+      .u4-menu {
+        background-color: @component-background;
+        color: @text-color-secondary;
+
+        .u4-menu-item {
+          height: 36px;
+          line-height: 36px;
+        }
+        .u4-menu-item:hover {
+          background-color: @active-color;
+        }
+      }
+    }
+
+    .u4-spin {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+
+  .mbt-right {
+    width: calc(100% - 161px);
+    background-color: @page-bg;
+
+    .mbt-model-list-filters {
+      padding: 16px;
+    }
+
+    .mbt-model-list-spin {
+      height: 100%;
+      .u4-spin-container {
+        height: 100%;
+      }
+    }
+
+    .mbt-model-list-wrap {
+      padding: 0 12px 0 5px;
+      height: calc(100% - 64px);
+      overflow-y: auto;
+
+      .scrollbar();
+
+      .mbt-model-card-wrap {
+        display: inline-block;
+        width: 214px;
+        margin-bottom: 14px;
+        margin-left: 11px;
+      }
+
+      .mbt-model-card {
+        position: relative;
+        overflow: hidden;
+
+        .mbt-model-card-content {
+          display: flex;
+          align-items: center;
+          height: 56px;
+          padding: 12px 34px 12px 20px;
+          background: @component-background;
+          border-radius: 2px;
+          border: 1px solid @border-color;
+          cursor: pointer;
+          transition: all 0.3s;
+
+          &.isHover:hover {
+            background-color: @link-color;
+
+            .mbt-model-card-title,
+            .mbt-model-card-heart,
+            i.iconfont {
+              // color: @active-color;
+              color: #f0f8ff;
+            }
+          }
+
+          &.selected {
+            background-color: @link-color;
+
+            .mbt-model-card-title,
+            .mbt-model-card-heart,
+            i.iconfont {
+              // color: @active-color;
+              color: #f0f8ff;
+            }
+          }
+
+          i.iconfont {
+            font-size: 28px;
+            color: @link-color;
+          }
+          i.iconfont.icon-fenxiangjiaobiao {
+            position: absolute;
+            bottom: -6px;
+            right: 0;
+            font-size: 20px;
+          }
+          img {
+            width: 28px;
+            height: 28px;
+          }
+          .mbt-model-card-title {
+            margin-left: 5px;
+            color: @text-color-secondary;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          i.mbt-model-card-heart {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            font-size: 16px;
+            color: @link-color;
+          }
+        }
+      }
+    }
+
+    .u4-spin {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+}

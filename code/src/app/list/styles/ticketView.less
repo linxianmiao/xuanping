@@ -1,0 +1,71 @@
+@import '~@uyun/everest-styles/index';
+
+.ticket-filter-popover-view-list {
+  .u4-popover-inner-content {
+    padding: 12px 0;
+    .ticket-filter-view-list {
+      width: 258px;
+      max-height: 300px;
+      overflow-y: auto;
+      li {
+        padding: 7px 8px;
+        cursor: pointer;
+        line-height: 1.5;
+        .showIcon {
+          i {
+            opacity: 0;
+          }
+        }
+        &:hover {
+          background: @link-color;
+          i {
+            opacity: 1;
+          }
+        }
+        span:first-child {
+          float: left;
+        }
+        span:last-child {
+          float: right;
+        }
+        .input-wrap {
+          display: inline-block;
+          width: 200px;
+          position: relative;
+          .u4-input {
+            padding-right: 15px;
+          }
+        }
+        .input-wrap:after {
+          content: ~'attr(data-length)';
+          position: absolute;
+          right: 5px;
+          line-height: 32px;
+          color: @text-color;
+        }
+      }
+    }
+  }
+}
+.ticket-filter-view-list-search-input {
+  position: relative;
+  display: inline-block;
+  width: 258px;
+  margin-right: 12px;
+  line-height: 1;
+  .icon-guanbi1.iconfont {
+    font-size: 13px;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    color: #ccc;
+    opacity: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  &:hover {
+    .icon-guanbi1.iconfont {
+      opacity: 0.6;
+    }
+  }
+}

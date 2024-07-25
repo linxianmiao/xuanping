@@ -1,0 +1,88 @@
+@import '~@uyun/everest-styles/index';
+
+.system-config-users-menu {
+  background: @page-bg;
+  text-align: center;
+}
+.new-user-group-div {
+  background: @page-bg;
+  border: 1px solid @border-color;
+}
+.new-user-group {
+  background-color: @page-bg;
+  border-color: @border-color;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  color: @text-color;
+  width: 142px;
+  border-radius: 2px;
+  font-size: 14px;
+  margin: 8px 0;
+  > .iconfont {
+    // vertical-align: -3px;
+    font-size: 20px;
+  }
+}
+.system-config-users-list {
+  text-align: left;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  top: 50px;
+  left: 0;
+  right: 0;
+  > li {
+    line-height: 32px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    position: relative;
+    color: @text-color;
+    overflow: hidden;
+  }
+  > li:hover {
+    background: @page-bg;
+    color: #fff;
+    .operation-icons {
+      display: block;
+    }
+  }
+  > li.active {
+    cursor: auto;
+    color: #fff;
+    background: @page-bg;
+    .operation-icons {
+      display: block;
+    }
+    .u4-input {
+      float: left;
+      width: 90px;
+      padding-left: 10px;
+      height: 34px;
+      border-radius: 0;
+      margin-left: -10px;
+    }
+  }
+  .group-name {
+    float: left;
+    width: 80px;
+    margin-left: 0;
+    line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .operation-icons {
+    margin-left: 5px;
+    float: left;
+    display: none;
+    .iconfont {
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  }
+}
+.system-config-users-list:hover {
+  overflow: auto;
+}

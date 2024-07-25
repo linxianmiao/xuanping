@@ -1,0 +1,84 @@
+{
+  "name": "ticketlist",
+  "dependencies": [
+    "itsm"
+  ],
+  "lang": {
+    "zh_CN": {
+      "title": "工单列表",
+      "desc": "工单列表"
+    },
+    "en_US": {
+      "title": "ticketList",
+      "desc": "ticketList"
+    }
+  },
+  "repeat": true,
+  "props": {
+    "appkey": "",
+    "filterType": "todo",
+    "pageSize": 20,
+    "openDetailMode": "drawer"
+  },
+  "properties": {
+    "appkey": {
+      "title": "AppKey",
+      "type": "string",
+      "isBindArgument": true
+    },
+    "filterType": {
+      "title": "数据范围",
+      "type": "string",
+      "value": "todo",
+      "enum": [
+        "todo",
+        "todoGroup",
+        "myCreate",
+        "myPartIn",
+        "all"
+      ],
+      "enumNames": [
+        "个人待办",
+        "组待办",
+        "我发起的",
+        "我参与的",
+        "所有工单"
+      ]
+    },
+    "pageSize": {
+      "title": "每页条数",
+      "type": "number",
+      "value": 20,
+      "enum": [
+        10,
+        15,
+        20,
+        50,
+        100
+      ],
+      "enumNames": [
+        10,
+        15,
+        20,
+        50,
+        100
+      ]
+    },
+    "openDetailMode": {
+      "title": "打开方式",
+      "type": "string",
+      "value": "drawer",
+      "enum": [
+        "drawer",
+        "newPage"
+      ],
+      "enumNames": [
+        "侧滑",
+        "新开标签页"
+      ]
+    }
+  },
+  "target": {
+    "lowcode": "./index.js"
+  }
+}

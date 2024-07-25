@@ -1,0 +1,84 @@
+@import '~@uyun/everest-styles/index';
+
+.entrust-status-desc {
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin-right: 5px;
+  }
+
+  &.bg0::before {
+    background: @primary-color;
+  }
+  &.bg1::before {
+    background: @info-color;
+  }
+  &.bg2::before {
+    background: @hits-color;
+  }
+}
+
+.audit-status-desc {
+  display: inline-block;
+  width: 44px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+  &.bg0 {
+    background: @serious-color;
+  }
+  &.bg1 {
+    background: @recover-color;
+  }
+  &.bg2 {
+    background: @error-color;
+  }
+}
+.entrust-wrapper {
+  .u4-form-inline {
+    .u4-form-item {
+      display: inline;
+    }
+  }
+  .entrust-tabs-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .entrust-table-operation {
+    & > a {
+      position: relative;
+      padding: 0 8px;
+      cursor: pointer;
+      &:after {
+        position: absolute;
+        content: '|';
+        right: 0;
+        top: -2px;
+        color: @text-color;
+      }
+    }
+    & > a:last-child:after {
+      display: none;
+    }
+    .xcf-disabled {
+      color: @disabled-color;
+      &:hover {
+        cursor: no-drop;
+        color: @hits-color;
+      }
+    }
+  }
+  .user-wrap {
+    .u4-form-item-control-wrapper {
+      .u4-form-item-control {
+        width: 150px;
+      }
+    }
+  }
+}

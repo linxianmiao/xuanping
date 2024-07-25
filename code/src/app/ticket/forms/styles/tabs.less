@@ -1,0 +1,22 @@
+@import '~@uyun/everest-styles/index';
+
+.ticket-froms-layout-tabs {
+  border: 1px solid @border-color;
+  .tabs-header {
+    display: flex;
+    background: @page-bg;
+    border-bottom: 1px solid @border-color;
+    & > div {
+      padding: 12px 28px;
+      border-right: 1px solid @border-color;
+      background: @page-bg;
+      cursor: pointer;
+      &.active {
+        background: @page-bg;
+      }
+    }
+  }
+  .tabs-section {
+    overflow: hidden;
+  }
+}

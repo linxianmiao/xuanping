@@ -1,0 +1,23 @@
+@import "~@uyun/everest-styles/index";
+
+.ticket-filter-wrap {
+  min-height: 140px;
+  margin: 16px 0;
+  position: relative;
+  .filter-btn {
+    overflow: hidden;
+    width: 100%;
+    .right-wrapper {
+      float: right;
+      button {
+        width: 60px;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+    .left-btn {
+      float: left;
+    }
+  }
+}

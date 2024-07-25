@@ -1,0 +1,35 @@
+@import '~@uyun/everest-styles/index';
+
+.form-set-field-script {
+  .header i {
+    margin: 0 5px;
+  }
+  .form-set-field-script-item {
+    position: relative;
+    i.iconfont {
+      cursor: pointer;
+    }
+    .text-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      .text-wrap-text {
+        position: relative;
+        padding-left: 10px;
+        color: @text-color;
+        font-size: 14px;
+        &:after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          top: 9px;
+          left: 0;
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          background: #6ac1ff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '~@uyun/everest-styles/index';
+
+@icon-bg: @primary-color;
+@icon-bg-select: @primary-color;
+@icon-border: @white;
+
+.field-header-wrap {
+  margin-top: 8px;
+}
+.field-header-icon {
+  min-width: 66px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  margin: 0 20px 20px 0;
+  color: @text-color;
+  & > div {
+    text-align: center;
+    background: @page-bg;
+    width: 55px;
+    margin: 0 auto;
+    border: 1px dashed @border-color;
+  }
+  .field-type-selected {
+    border: 1px solid @icon-bg-select;
+    background: @icon-bg-select;
+    color: @icon-border;
+  }
+  .field-type-commons {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 40px;
+    &.icon-guanlian {
+      font-size: 30px;
+    }
+  }
+}

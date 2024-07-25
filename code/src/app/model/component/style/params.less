@@ -1,0 +1,89 @@
+@import '~@uyun/everest-styles/index';
+
+.param-modal {
+  .u4-modal-body {
+    background: @component-background;
+    .u4-form-item {
+      margin-bottom: 20px;
+    }
+  }
+  .tip-color {
+    color: @text-color;
+    margin-left: 5px;
+  }
+}
+.u4-pagination {
+  text-align: right;
+  padding: 10px;
+}
+.param-wrap {
+  padding: 0 10px;
+  .u4-table-content thead tr :nth-child(2) {
+    text-align: center;
+    &:hover {
+      background: @header-bg;
+    }
+  }
+  .u4-table {
+    border: none;
+  }
+  .type-wrap {
+    display: inline-block;
+  }
+  .u4-table tr {
+    .button-contentWrap {
+      text-align: center;
+    }
+  }
+  .param-content {
+    height: 48px;
+    line-height: 30px;
+    padding: 9px 10px;
+
+    .param-tips {
+      float: left;
+    }
+    .param-button {
+      float: right;
+      text-align: center;
+      line-height: 1;
+      width: 100px;
+    }
+  }
+}
+.expand-plugin {
+  margin-top: -16px;
+  margin-bottom: -21px;
+  border: 1px solid @border-color;
+  padding: 0px 22px 5px;
+  background: @page-bg;
+  color: @text-color;
+  min-height: 77px;
+  .upload-tips {
+    // margin-left: 100px;
+    // margin-bottom: 5px;
+    a {
+      color: @link-color;
+    }
+    span {
+      margin: 0 5px 0 10px;
+    }
+  }
+  .input-wrap {
+    input {
+      width: 80%;
+    }
+    div {
+      margin-left: 10px;
+      width: 31px;
+      height: 31px;
+      background: @page-bg;
+      display: inline-block;
+      border-radius: 2px;
+      text-align: center;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}

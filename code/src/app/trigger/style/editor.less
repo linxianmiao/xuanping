@@ -1,0 +1,115 @@
+.au-editor {
+  .CodeMirror-linenumber {
+    left: -24px;
+  }
+  border: 1px solid @border-color;
+  .au-editor-body {
+    min-height: 400px;
+  }
+  &-header {
+    padding: 5px;
+    line-height: 29px;
+    color: @text-color;
+    background: @page-bg;
+    border-bottom: 1px solid @border-color;
+    i.iconfont {
+      float: right;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    .u4-btn {
+      margin-top: 3px;
+    }
+  }
+  &-body {
+    position: relative;
+    min-height: 650px;
+    height: 100%;
+    .au-deitor-side {
+      z-index: 101;
+      width: 170px;
+      position: absolute;
+      right: 0;
+      top: 0px;
+      bottom: 0;
+      background-color: @page-bg;
+      color: @text-color;
+      border-right: none;
+      overflow-y: auto;
+      .side_wrap {
+        padding: 24px 0 10px 0;
+      }
+      .side_content_row {
+        height: 28px;
+        line-height: 28px;
+        cursor: pointer;
+        padding-left: 16px;
+      }
+      .side_content_row:hover {
+        background: #1f99e5;
+      }
+    }
+    .editor-cancel-icon {
+      position: absolute;
+      right: 14px;
+      top: -4px;
+      z-index: 102;
+    }
+    .au-editor-wrap,
+    .au-editor-placeholder {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+    .au-editor-placeholder {
+      padding: 5px 5px 5px 32px;
+      color: @text-color;
+      z-index: 2;
+    }
+    .CodeMirror-code {
+      line-height: 18px;
+      min-height: 100%;
+    }
+    .CodeMirror {
+      height: 100%;
+      padding: 0px;
+      &-gutters {
+        background: @page-bg;
+        border-right: 1px solid @border-color;
+      }
+      .au-codemirror-hightlight {
+        background: @page-bg;
+      }
+    }
+    .cm-s-monokai.CodeMirror,
+    .cm-s-eclipse.CodeMirror {
+      background: transparent;
+    }
+  }
+  &.au-fullscreen {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 999;
+    top: 55px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: @page-bg;
+    .au-editor-body {
+      height: 90%;
+      border-bottom: 1px solid @border-color;
+      border-right: 1px solid @border-color;
+    }
+  }
+}
+
+.v-item-wrap.v-error {
+  .au-editor {
+    border-color: @serious-color;
+  }
+}

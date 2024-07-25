@@ -1,0 +1,162 @@
+@import '~@uyun/everest-styles/index';
+
+.SLA_table {
+  .relate_operate_ok {
+    cursor: pointer;
+    color: @link-color;
+  }
+  .ticket-list-table-th-status {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    i {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      margin-right: 8px;
+    }
+  }
+  .relate_operate {
+    cursor: not-allowed;
+    color: @disabled-color;
+  }
+  .u4-table-thead > tr > th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.sla-no-data {
+  color: @text-color;
+}
+.detail-sla-popover {
+  padding: 10px 10px 15px;
+  color: @text-color;
+  header {
+    line-height: 18px;
+    color: #3883f8;
+    &.is_admin {
+      cursor: pointer;
+    }
+  }
+  .u4-row {
+    margin-top: 8px;
+    .sla-status-item-label {
+      color: @text-color;
+      display: inline-block;
+      & + div {
+        display: inline-block;
+      }
+    }
+  }
+}
+.sla-status-list {
+  border-bottom: 1px solid @border-color;
+  padding: 27px 20px 15px;
+  color: @text-color;
+  header {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    color: @text-color;
+  }
+  .u4-row {
+    margin-top: 12px;
+    .sla-status-item-label {
+      color: @text-color;
+      display: inline-block;
+      & + div {
+        display: inline-block;
+      }
+    }
+  }
+}
+.ticket-detail-wrap {
+  .u4-popover-inner {
+    min-width: 120px;
+    background: @page-bg;
+    .u4-popover-inner-content {
+      padding: 0;
+      .customization {
+        padding: 15px;
+        color: @text-color;
+      }
+    }
+  }
+}
+.sla-status-overdue,
+.sla-status-normal,
+.sla-status-recover {
+  padding-left: 10px;
+  position: relative;
+}
+.sla-status-normal::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: dodgerblue;
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.sla-status-overdue::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #fe5252;
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.sla-status-recover::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: dodgerblue;
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.ola-status-overdue,
+.ola-status-normal,
+.ola-status-recover {
+  padding-left: 10px;
+  position: relative;
+}
+.ola-status-normal::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: rgb(60, 215, 104);
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.ola-status-overdue::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #fe5252;
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.ola-status-recover::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: rgb(255, 205, 61);
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}

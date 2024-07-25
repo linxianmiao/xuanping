@@ -1,0 +1,62 @@
+.rc-drawer {
+  z-index: 100!important;
+  .rc-drawer-content-wrapper {
+    .rc-drawer-content {
+      position: relative;
+      background-color: @light-bg;
+
+      .drawer-header {
+        padding: 14px 24px;
+        color: @text-color;
+        background-color:  @light-bg;
+        border-bottom: 1px solid @border-color;
+        border-radius: 2px 2px 0 0;
+
+        .drawer-title {
+          margin: 0;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 500;
+        }
+      }
+
+      .drawer-body {
+        padding: 16px;
+        font-size: 12px;
+        line-height: 1.5;
+        word-wrap: break-word;
+        height: calc(100% - 51px);
+        overflow: auto;
+      }
+
+      .drawer-close {
+        cursor: pointer;
+        border: 0;
+        background: transparent;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.3s;
+        color: @text-color;
+        outline: 0;
+        padding: 0;
+        display: block;
+        font-style: normal;
+        text-align: center;
+        text-transform: none;
+        text-rendering: auto;
+        width: 51px;
+        height: 51px;
+        line-height: 51px;
+        font-size: 14px;
+
+        &:hover {
+          color: @active-color;
+        }
+      }
+    }
+  }
+}

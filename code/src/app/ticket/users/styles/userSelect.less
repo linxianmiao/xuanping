@@ -1,0 +1,126 @@
+@import '~@uyun/everest-styles/index';
+
+.new-users-modal-section-wrap {
+  &.tree-radio {
+    .u4-tree-checkbox {
+      .u4-tree-checkbox-inner {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 14px;
+        height: 14px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 14px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      &.u4-tree-checkbox-checked {
+        .u4-tree-checkbox-inner {
+          background: transparent;
+          &::before {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: 2px;
+            top: 2px;
+            border-radius: 4px;
+            display: table;
+            content: ' ';
+            background: @page-bg;
+          }
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .user-search-warp {
+    padding: 5px 0;
+    .variable-select-wrap {
+      float: right;
+      line-height: 32px;
+    }
+  }
+  .u4-select {
+    width: auto;
+  }
+  .user-pagination {
+    float: right;
+  }
+  .user-lists-warp {
+    .user-lists-header {
+      height: 34px;
+      line-height: 34px;
+      overflow: hidden;
+      padding: 0 20px;
+      background: @page-bg;
+      .user-lists-header-order-wrap {
+        float: right;
+        .user-lists-header-orde-name {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .user-lists-header-order-inner {
+          position: relative;
+          margin-left: 4px;
+          display: inline-block;
+          width: 14px;
+          vertical-align: middle;
+          text-align: center;
+          i {
+            display: block;
+            transform: scale(0.8);
+            line-height: 7px;
+            color: @link-color;
+            &.active {
+              color: @active-color;
+              color: transparent;
+            }
+          }
+        }
+      }
+    }
+    .user-lists-inner {
+      overflow-y: auto;
+      height: 300px;
+
+      .user-item-wrap {
+        padding: 0 20px;
+        line-height: 34px;
+        box-sizing: border-box;
+        background: @page-bg;
+        border-bottom: 1px solid @border-color;
+        &.user-select-list {
+          line-height: 26px;
+        }
+        &:last-child {
+          border-bottom: 1px solid @border-color;
+        }
+        .u4-radio-wrapper {
+          width: ~'calc(100%-80px)';
+          margin-right: 0;
+          .u4-radio {
+            vertical-align: middle;
+            & + span {
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+        }
+        .u4-checkbox-wrapper {
+          width: ~'calc(100% - 80px)';
+          .u4-checkbox + span {
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+        .ticket-num {
+          float: right;
+        }
+      }
+    }
+  }
+}

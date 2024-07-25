@@ -1,0 +1,94 @@
+@import '~@uyun/everest-styles/index';
+
+.trigger-config-modal {
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background: @page-bg;
+    border-top: 1px solid @border-color;
+    .u4-btn {
+      margin-right: 15px;
+      &:last-child {
+        color: @text-color;
+        border-color: @border-color;
+        background: transparent;
+      }
+    }
+  }
+}
+.web-trigger-config {
+  .mt10 {
+    margin-top: 10px;
+  }
+  .add-rules-btn {
+    padding: 0 15px;
+    line-height: 24px;
+    height: 28px;
+  }
+  .header i.iconfont {
+    padding: 0 3px;
+    cursor: pointer;
+  }
+  .rules-config {
+    .text-wrap {
+      position: relative;
+      margin-bottom: 10px;
+      .text-wrap-text {
+        position: relative;
+        padding-left: 10px;
+        color: @text-color;
+        font-size: 14px;
+        &:after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 0;
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          background: #6ac1ff;
+        }
+      }
+      .checkbox-wrap {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        color: @text-color;
+      }
+    }
+    .u4-form-item {
+      position: relative;
+      .icon-shanchu {
+        padding-left: 15px;
+        cursor: pointer;
+      }
+    }
+    .add-change-btn {
+      padding: 0 15px;
+      line-height: 24px;
+      margin-bottom: 30px;
+      margin-left: 10px;
+    }
+    .u4-form-item {
+      margin-bottom: 15px;
+    }
+    .key-value {
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 10px;
+      .icon-shanchu {
+        position: absolute;
+        right: -6px;
+        top: 0;
+      }
+    }
+    .add-option-btn {
+      padding: 0 15px;
+      line-height: 24px;
+      margin-left: 10px;
+      height: inherit;
+    }
+  }
+}

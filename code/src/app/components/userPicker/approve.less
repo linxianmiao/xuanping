@@ -1,0 +1,60 @@
+@import '~@uyun/everest-styles/index';
+
+.approveWrapper {
+  display: flex;
+  height: 100%;
+  .approveWrapperLeft {
+    width: 200px;
+    // height: 100%;
+    min-height: 100%;
+    .u4-card-body-wrapper {
+      height: 100%;
+      .u4-card-body {
+        padding: 0;
+        height: 100%;
+      }
+    }
+  }
+  .approveWrapperMiddle {
+    width: 200px;
+    position: relative;
+    // height: 100%;
+    min-height: 100%;
+    .u4-card-body-wrapper {
+      height: 100%;
+      .u4-card-body {
+        height: 100%;
+      }
+    }
+    .approveWrapperMiddleTree {
+      height: 510px;
+      overflow-y: auto;
+    }
+  }
+
+  .approveWrapperRight {
+    flex: 1;
+    .u4-card {
+      position: relative;
+      height: 45%;
+      .u4-card-body-wrapper {
+        height: 100%;
+      }
+    }
+    .u4-btn {
+      margin-right: 10px;
+    }
+    .approveWrapperRightBtn {
+      display: flex;
+      justify-content: center;
+      margin: 10px 10px 20px 10px;
+    }
+  }
+}
+.approvetilte {
+  position: absolute;
+  top: -12px;
+  font-size: 16px;
+  display: inline-block;
+  background: #fff;
+}

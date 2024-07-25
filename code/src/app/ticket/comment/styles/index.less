@@ -1,0 +1,232 @@
+@import '~@uyun/everest-styles/index';
+
+.comment-wrap {
+  .ml10 {
+    margin-left: 10px;
+  }
+
+  .comment-box2 {
+    // height: 28px;
+    border-radius: 2px;
+    position: relative;
+    .submit {
+      &.disabled {
+        .comment-btn {
+          cursor: not-allowed;
+        }
+      }
+    }
+    .upload-btn,
+    .at {
+      .at-btn {
+        &.disabled {
+          cursor: not-allowed;
+        }
+      }
+    }
+    .editor-wrap {
+      padding-right: 70px;
+      .editor-box {
+        min-height: 26px;
+        line-height: 26px;
+        font-size: 12px;
+        // overflow: hidden;
+        // overflow-y: auto;
+        background-color: @page-bg;
+        padding: 0 10px;
+        .placeholder {
+          color: @text-color;
+        }
+      }
+    }
+    .at {
+      position: absolute;
+      bottom: 0;
+      right: 60px;
+      width: 30px;
+      .at-btn {
+        color: @hits-color;
+        background-color: @page-bg;
+        // display: block;
+        margin-right: 10px;
+        line-height: 26px;
+        text-align: center;
+      }
+    }
+    .u4-upload {
+      position: absolute;
+      bottom: 2px;
+      right: 45px;
+      width: 30px;
+      .at-btn {
+        color: @hits-color;
+      }
+    }
+    .upload-list-inline {
+      .u4-upload-list {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 130px;
+        line-height: 17px;
+        // border:1px solid red;
+        min-height: 20px;
+        // overflow-y: scroll;
+        .u4-upload-list-item {
+          float: left;
+          width: 25%;
+          margin-top: 0;
+          height: auto;
+          .uyunicon-paper-clip {
+            top: 2px;
+          }
+        }
+      }
+    }
+
+    .submit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      .comment-btn {
+        border: 1px solid @border-color;
+        width: 100%;
+        cursor: pointer;
+        height: 60px;
+        line-height: 26px;
+        text-align: center;
+        border: none;
+        color: @text-color;
+        background-color: @page-bg;
+      }
+    }
+    .mention-input--multiLine,
+    .mention-input__control {
+      height: auto;
+    }
+  }
+  .expend-comment {
+    color: @text-color;
+    margin-top: 10px;
+    a {
+      color: @text-color;
+      margin-right: 4px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    i {
+      font-size: 12px;
+      display: inline-block;
+    }
+    .iconXiatui {
+      transform: rotate(180deg);
+      position: relative;
+      top: -1.5px;
+    }
+  }
+  .ticket-comment {
+    padding: 10px;
+    background-color: @page-bg;
+    .comment {
+      .left {
+        float: left;
+        padding-top: 4px;
+        .gravata {
+          width: 36px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          border: 1px solid @border-color;
+          background-color: #70c7ff;
+          border-radius: 2px;
+          color: @text-color;
+          font-size: 25px;
+        }
+      }
+      .content {
+        padding-left: 40px;
+        .top {
+          color: @text-color;
+          line-height: 22px;
+          .comment-people {
+            color: @text-color;
+          }
+          .break-word {
+            word-break: break-all;
+            word-wrap: break-word;
+          }
+          .time {
+            margin-left: 3px;
+            color: @text-color;
+          }
+        }
+        .bottom {
+          line-height: 22px;
+          color: @text-color;
+          .iconfont {
+            vertical-align: middle;
+            color: @text-color;
+          }
+          .deleteTxt {
+            text-decoration: line-through;
+            opacity: 0.6;
+          }
+        }
+      }
+      .show-more {
+        font-size: 16px;
+        padding: 0 0 5px 40px;
+        color: @text-color;
+        a {
+          font-size: 12px;
+          margin-left: 6px;
+          display: inline;
+          color: @text-color;
+        }
+      }
+    }
+  }
+  #textAreaWithFile {
+    padding-bottom: 35px;
+    box-sizing: border-box;
+  }
+  .multiple-triggers {
+    height: auto !important;
+    font-size: 12px;
+  }
+  .mention-input__suggestions {
+    background-color: @page-bg !important;
+    .mention-input__suggestions__list {
+      max-height: 200px;
+      width: 150px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .mention-input__suggestions__item--focused {
+      background-color: @page-bg;
+    }
+    .mention-input__suggestions__item {
+      padding: 5px 15px;
+    }
+  }
+
+  .mention-input--multiLine,
+  .mention-input__control {
+    // border: 1px solid red;
+    min-height: 60px;
+    padding-bottom: 30px;
+  }
+
+  .user {
+    color: @text-color;
+  }
+  .comment-content {
+    margin-top: 50px;
+  }
+}
+.ticket-forms-tabs-wrap .comment-wrap .top-comment-box {
+  // height: 48px;
+  padding: 20px 20px 0 20px;
+}

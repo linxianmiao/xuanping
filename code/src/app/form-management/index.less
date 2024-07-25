@@ -1,0 +1,59 @@
+@import '~@uyun/everest-styles/index';
+
+.form-management {
+  .form-management-form-set {
+    position: absolute;
+    top: 42px;
+    bottom: 48px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  .form-management-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-top: 1px solid @divider-color;
+    button {
+      margin-right: 16px;
+    }
+  }
+
+  .tables-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .tables-section .operation {
+    a {
+      position: relative;
+      margin-right: 16px;
+      &:after {
+        content: '|';
+        position: absolute;
+        right: -8px;
+        top: -1px;
+        color: @link-color;
+      }
+      &:last-child {
+        position: relative;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  a.disabled {
+    color: @disabled-color;
+  }
+}
+
+.white {
+  .form-management-footer {
+    background: #fff;
+  }
+}

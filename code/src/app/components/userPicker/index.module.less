@@ -1,0 +1,74 @@
+@import '~@uyun/everest-styles/index';
+
+.user-picker-wrap {
+  display: flex;
+  &.disabled {
+    flex-wrap: wrap;
+    position: relative;
+    top: 5px;
+  }
+  button {
+    margin-left: 5px;
+  }
+  :global {
+    .u4-dropdown {
+      width: 100%;
+    }
+    .ec-user-picker-select {
+      width: 100%;
+      .u4-table {
+        height: 300px;
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+.table {
+  &.small-size {
+    height: 300px;
+    min-width: 400px;
+  }
+  :global {
+    .u4-table-tbody > tr > td {
+      cursor: pointer;
+    }
+    .u4-pagination.mini {
+      .u4-pagination-item:not(.u4-pagination-item-active),
+      .u4-pagination-jump-prev,
+      .u4-pagination-jump-next {
+        display: none;
+      }
+    }
+  }
+}
+
+:global {
+  .ec-user-picker-group-table-global-only {
+    display: none !important;
+  }
+}
+
+.modal {
+  :global {
+    .u4-modal-body {
+      max-height: 620px;
+      min-width: 900px;
+      overflow: hidden;
+      .u4-tabs-content-holder {
+        overflow: auto;
+      }
+      .ec-user-picker-select-tags {
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+.hidden {
+  :global {
+    .ec-user-picker-select-display-area .ec-user-picker-tags .u4-input-search {
+      display: none;
+    }
+  }
+}

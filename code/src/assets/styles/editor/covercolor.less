@@ -1,0 +1,59 @@
+@import '~@uyun/everest-styles/index';
+
+@simditor-wrapper-bg: @component-background;
+@simditor-toolbar-bg: @header-bg;
+@toolbar-item1-color: @heading-color;
+@toolbar-item2-color: @text-color;
+@editor-style-color: @text-color;
+@simditor-body-table-bg: @header-bg;
+@simditor-body-table-active-bg: @header-bg;
+@toolbar-item-active-bg: @light-bg;
+@simditor-popover-color: #666;
+@simditor-popover-border: #e6e6e6;
+
+.simditor {
+  position: relative;
+  border: 1px solid @border-color;
+}
+.simditor .simditor-wrapper {
+  position: relative;
+  background: @light-bg;
+}
+.simditor .simditor-toolbar {
+  border-width: 0;
+  background: @divider-bg;
+  width: 100%;
+}
+.simditor .simditor-toolbar > ul > li > .toolbar-item {
+  color: @text-color;
+}
+.simditor .simditor-toolbar > ul > li.menu-on > .toolbar-item {
+  color: @toolbar-item2-color;
+}
+.simditor .simditor-body p,
+.simditor .simditor-body div,
+.editor-style p,
+.editor-style div,
+.simditor .simditor-body,
+.editor-style {
+  color: @editor-style-color;
+}
+.simditor .simditor-toolbar > ul > li > .toolbar-item.active {
+  background: @toolbar-item-active-bg;
+}
+.simditor .simditor-body table thead,
+.editor-style table thead {
+  background: @simditor-body-table-bg;
+}
+.simditor .simditor-body table td.active,
+.simditor .simditor-body table th.active,
+.editor-style table td.active,
+.editor-style table th.active {
+  background: @simditor-body-table-active-bg;
+}
+.simditor .simditor-popover {
+  color: @simditor-popover-color;
+}
+.simditor .simditor-popover .settings-field input[type='text'] {
+  border: 1px solid @simditor-popover-border;
+}

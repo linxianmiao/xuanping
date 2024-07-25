@@ -1,0 +1,21 @@
+@import '~@uyun/everest-styles/index';
+
+.field-list-index{
+  height: 100%;
+  :global{
+    .extend-list{
+      .extend-filter{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.field-layout-list{
+  // composes: @title-prefix-cls;
+  min-height: 100px;
+  max-height: 300px;
+  height: auto;
+  overflow-y: auto;
+}

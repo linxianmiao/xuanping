@@ -1,0 +1,52 @@
+.ticket-list-table {
+  :global {
+    .table-th-priority {
+      padding: 2px 4px;
+      color: #fff;
+      &.priority1 {
+        background: #b3c1d4;
+      }
+      &.priority2 {
+        background: #76dd6c;
+      }
+      &.priority3 {
+        background: #fad541;
+      }
+      &.priority4 {
+        background: #ff794c;
+      }
+      &.priority5 {
+        background: #fb4d4a;
+      }
+    }
+    .ticket-list-table-th-status {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      i {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.shenglue {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.drawer-iframe {
+  :global {
+    .u4-spin-nested-loading,
+    .u4-spin-container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '~@uyun/everest-styles/index';
+
+.conf-trigger-log-list-wrap {
+  &.add-padding {
+    padding-top: 12px;
+  }
+  position: relative;
+  .conf-trigger-log-list-header {
+    .btn-groups {
+      float: right;
+      margin-bottom: 20px;
+      button:first-child {
+        margin-right: 15px;
+      }
+    }
+    & > span {
+      vertical-align: middle;
+    }
+  }
+  .export-radio {
+    display: block;
+    line-height: 32px;
+  }
+  .triggle-log-execute-status {
+    position: relative;
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 100%;
+      margin-right: 5px;
+    }
+    &.success:before {
+      background: #30d85c;
+    }
+    &.falure::before {
+      background: #ff0000;
+    }
+  }
+  .trigger-expanded-row {
+    .u4-form-item-children {
+      line-height: 32px;
+    }
+    a {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .trigger-expanded-row-name {
+      &.success {
+        color: #30d85c;
+      }
+      &.falure {
+        color: #ff0000;
+      }
+    }
+  }
+  .u4-form-item {
+    margin-bottom: 0;
+  }
+}

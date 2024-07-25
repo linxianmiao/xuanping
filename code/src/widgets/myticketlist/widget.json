@@ -1,0 +1,18 @@
+{
+  "name": "itsm/myticketlist",
+  "path": "/itsm",
+  "dependencies": ["itsm"],
+  "category": [],
+  "lang": {
+    "zh_CN": {
+      "title": "我的工单",
+      "desc": "我的待办、已办、参与以及审批列表和工单详情"
+    },
+    "en_US": {
+      "title": "myticketlist",
+      "desc": "myticketlist"
+    }
+  },
+  "height": 500,
+  "width": 12
+}

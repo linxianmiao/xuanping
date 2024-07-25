@@ -1,0 +1,84 @@
+@import '~@uyun/everest-styles/index';
+
+.u4-modal .u4-btn {
+  border: 1px solid @border-color!important;
+}
+.condition-item-wrap {
+  border: 1px dashed #e4e7eb;
+  padding: 10px;
+  .icon-shanchu {
+    color: #3883f8;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 100;
+    font-style: normal;
+    cursor: pointer;
+  }
+}
+.condition-item {
+  position: relative;
+  padding-right: 20px;
+}
+.condition-item-level-1,
+.condition-item-level-2 {
+  padding-left: 50px;
+  padding-right: 0;
+  .condition-item-arrow {
+    border-left: 1px solid #6ca4cd;
+    border-bottom: 1px solid #6ca4cd;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 12px;
+  }
+  .icon-item-shanchu {
+    color: #3883f8;
+    position: absolute;
+    right: -25px;
+    top: 10px;
+  }
+}
+.condition-item-header-left {
+  float: left;
+}
+.condition-item-header-right {
+  float: right;
+  .u4-btn {
+    margin-left: 10px;
+  }
+}
+.condition-expressions-wrap {
+  display: flex;
+  margin-top: 10px;
+}
+.condition-expressions-item {
+  flex: 1;
+  > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+    margin-right: 15px;
+  }
+  .expressions-select {
+    width: 100px;
+  }
+  .value-select {
+    width: 180px;
+  }
+}
+.condition-expressions-delete {
+  width: 24px;
+  vertical-align: middle;
+  text-align: center;
+}
+.condition-user-wrap {
+  line-height: 26px;
+  border: 1px solid #d5ddeb;
+  border-radius: 2px;
+  padding: 0 7px;
+  min-height: 28px;
+}

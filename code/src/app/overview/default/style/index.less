@@ -1,0 +1,44 @@
+@import '~@uyun/everest-styles/index';
+
+.overview-default {
+  > .u4-row {
+    > .u4-col-18 {
+      padding-right: 10px;
+    }
+    > .u4-col-6 {
+      padding-left: 10px;
+    }
+  }
+}
+.overview-default-public-wrap {
+  border-radius: 4px;
+  background: transparent;
+  height: 400px;
+  position: relative;
+  .ec-title {
+    font-weight: 700;
+  }
+  .timer-range-picker,
+  .overview-default-filter {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+  .chart-wrap {
+    height: 100%;
+    width: 100%;
+  }
+}
+.overview-default-public-chart-box {
+  padding: 20px;
+  height: 360px;
+  border: 1px solid @border-color;
+  border-radius: 2px;
+  background: @page-bg;
+}
+.overview-default-filter {
+  .u4-select {
+    float: left;
+    margin-right: 10px;
+  }
+}

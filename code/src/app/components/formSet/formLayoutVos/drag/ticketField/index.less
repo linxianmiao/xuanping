@@ -1,0 +1,21 @@
+.ticket-field-list {
+  .list-item {
+    color: @text-color;
+    border: 1px solid @border-color;
+    padding: 0 16px;
+    border-radius: 2px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 8px;
+    cursor: pointer;
+    i {
+      margin-right: 5px;
+    }
+    &.disabled {
+      cursor: no-drop;
+      color: @disabled-color;
+      background: @disabled-bg;
+      border: 1px solid @border-color;
+    }
+  }
+}

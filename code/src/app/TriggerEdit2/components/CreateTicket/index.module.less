@@ -1,0 +1,20 @@
+@import '~@uyun/everest-styles/index';
+
+.form-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: @component-background;
+  overflow: hidden;
+
+  :global {
+    .uyunicon.uyunicon-delete {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 16px;
+      color: @link-color;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@import '~@uyun/everest-styles/index';
+
+.process-icon {
+  float: right !important;
+  cursor: pointer;
+  margin-top: 3px;
+  color: @text-color;
+}
+.fancyBox {
+  .box {
+    z-index: 10000;
+    .image-box {
+      margin: 10px;
+    }
+  }
+  .thumbnail {
+    img {
+      display: none !important;
+    }
+  }
+}
+.detail-head {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-bottom: 1px solid @divider-color;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  h3 {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    line-height: 46px;
+    font-weight: 400;
+    color: @text-color;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .u4-form-item {
+      display: inline-block;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+    .ticket-temp-list {
+      float: none;
+      .u4-select {
+        width: 100%;
+      }
+    }
+  }
+  .uyunicon-file-search {
+    line-height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  i.iconfont {
+    cursor: pointer;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: @component-background;
+    margin-left: 5px;
+    line-height: 28px;
+    text-align: center;
+    color: @text-color-secondary;
+  }
+  button {
+    margin-left: 8px;
+  }
+}
+.create-more-btn-dropdown {
+  z-index: 100;
+  .more-overlay {
+    background-color: @light-bg;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    .iconfont {
+      font-size: 14px;
+      margin-right: 4px;
+    }
+    .uyunicon-file-search {
+      font-size: 14px;
+      margin-right: 4px;
+    }
+    div {
+      padding: 5px 12px;
+      cursor: pointer;
+    }
+  }
+}

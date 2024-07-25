@@ -1,0 +1,278 @@
+@import '~@uyun/everest-styles/index';
+
+.resource-table-wrap {
+  .customization-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+.froms-group-wrap,
+.froms-panel-wrap {
+  margin-bottom: 8px;
+  position: relative;
+  .u4-collapse-item {
+    border: none;
+  }
+  .simditor {
+    border: 1px solid @border-color;
+  }
+  .pre-wrap {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .u4-form-item {
+    margin-bottom: 12px;
+  }
+  .from-group-inner {
+    display: flex;
+    flex-wrap: wrap;
+    background: @component-background;
+    .u4-table {
+      line-height: 18px;
+    }
+    .secrecy-div {
+      // padding: 6px 10px;
+      // background: rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+      line-height: 1.5;
+      span {
+        position: relative;
+        top: 3px;
+      }
+    }
+    .disabled-ticket-form {
+      line-height: 1.5;
+      vertical-align: middle;
+      display: block;
+      // background: rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+      color: @text-color;
+      // padding: 6px 10px;
+      table {
+        > thead {
+          > tr {
+            > th {
+              border: 1px solid #ccc;
+              padding: 5px;
+            }
+          }
+        }
+        > tbody {
+          > tr {
+            > td {
+              border: 1px solid #ccc;
+              padding: 3px;
+            }
+          }
+        }
+      }
+    }
+    .disabled-ticket-input {
+      border-color: @border-color;
+      background-color: @disabled-bg;
+      color: @disabled-color;
+      box-shadow: none !important;
+    }
+    //数组只读样式
+    .read-only {
+      border: 1px solid @border-color;
+      width: 100%;
+      padding: 6px 11px;
+      color: @disabled-color;
+      background-color: @disabled-bg;
+    }
+    .read-only-user {
+      border: 1px solid @border-color;
+      width: 100%;
+      padding: 0 11px;
+      background-color: @disabled-bg;
+    }
+    // 解决横向布局时，内容高出的问题
+    .u4-form-item-control-wrapper:not(.u4-col-24) {
+      .disabled-ticket-form {
+        padding-top: 8px;
+      }
+      .no-padding-top {
+        margin-top: -8px; //有些组件加上以上的padding-top会不垂直居中，需要去掉
+      }
+    }
+  }
+  .u4-collapse > .u4-collapse-item > .u4-collapse-header {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid @divider-color;
+  }
+}
+.itsm-components-form-set,
+#ticket-forms-wrap {
+  .verticalLabel {
+    .u4-form-item-label {
+      padding-bottom: 0;
+    }
+    .u4-form-item-children {
+      > div {
+        > div {
+          top: 0;
+        }
+      }
+    }
+  }
+  .u4-form-item:not(.verticalLabel) {
+    .file-tag-list {
+      padding-top: 2px;
+    }
+  }
+  .u4-table-wrapper {
+    margin-top: 4px;
+  }
+  .u4-form-item-label {
+    line-height: 16px;
+    white-space: normal;
+    label {
+      line-height: 16px;
+    }
+  }
+  .current-tache-form-wrap {
+    .u4-form-item-control {
+      .u4-form-item-children {
+        position: absolute;
+      }
+    }
+  }
+  .btn-form-wrap:not(.verticalLabel) {
+    button {
+      position: relative;
+      top: -5px;
+    }
+  }
+  .table-style-item {
+    width: 100%;
+    border: 1px solid @border-color;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: -2px;
+    padding-right: 0 !important;
+    .u4-form-item-control {
+      width: 100%;
+    }
+    .u4-form-item-label {
+      background: @header-bg;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      line-height: 1.5em;
+      border-right: 1px solid @border-color;
+    }
+    .u4-form-item-control-wrapper {
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      button {
+        top: 0;
+      }
+    }
+  }
+}
+.formset-layout-wrap {
+  .ticket-field-item {
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    right: -99999px;
+  }
+}
+
+#ticket-forms-wrap {
+  min-height: 100px;
+  .detail-forms-main-form-hidden,
+  .disabled-item {
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    right: -99999px;
+  }
+  .required-item-icon {
+    color: #ff4848;
+    margin-right: 3px;
+  }
+
+  .u4-form-item-label {
+    padding-bottom: 2px;
+  }
+
+  .form-label {
+    margin-bottom: 10px;
+  }
+  .u4-collapse-content-box {
+    position: relative;
+  }
+  .relate-ticket-mes {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: red;
+  }
+}
+
+.field-relate-ticket-num {
+  display: flex;
+  width: 100%;
+  > div:nth-child(1) {
+    width: 100%;
+    .u4-select {
+      width: 100% !important;
+    }
+  }
+  .u4-btn {
+    margin-left: 6px;
+    min-width: 32px;
+  }
+  .ticket-forms-relate-ticket {
+    width: 0 !important;
+  }
+}
+.field-relate-ticket-num-active {
+  > div:nth-child(1) {
+    width: calc(100% - 38px);
+  }
+}
+
+.numberWrap {
+  .u4-form-item-children > div {
+    display: inline-block;
+  }
+}
+
+#notification-wrap {
+  .detail-forms-main-form-hidden,
+  .disabled-item {
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    right: -99999px;
+  }
+  .disabled-ticket-input {
+    border-color: @border-color;
+    background-color: @disabled-bg;
+    color: @disabled-color;
+    box-shadow: none !important;
+  }
+  //数组只读样式
+  .read-only {
+    border: 1px solid @border-color;
+    width: 100%;
+    padding: 6px 11px;
+    color: @disabled-color;
+    background-color: @disabled-bg;
+  }
+  .read-only-user {
+    border: 1px solid @border-color;
+    width: 100%;
+    padding: 0 11px;
+    background-color: @disabled-bg;
+  }
+}

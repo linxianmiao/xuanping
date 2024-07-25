@@ -1,0 +1,127 @@
+@import '~@uyun/everest-styles/index';
+
+.field-card-wrap {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.field-card-content {
+  position: relative;
+  margin-top: 16px;
+  margin-left: 16px;
+  background: @page-bg;
+  border: 1px solid @border-color;
+  border-radius: 4px;
+  min-height: 120px;
+  box-sizing: border-box;
+  cursor: pointer;
+  &.field-card-create {
+    border: 1px solid @border-color;
+  }
+  section.field-card-section {
+    padding: 9px;
+    color: @text-color;
+    font-size: 12px;
+    .field-card-section-des {
+      overflow: hidden;
+      color: field-card-section-des;
+      height: 28px;
+      line-height: 28px;
+    }
+    .field-card-section-tag {
+      .u4-tag {
+        background: @page-bg;
+        border: 1px solid @border-color;
+        box-sizing: border-box;
+        border-radius: 2px;
+        line-height: 20px;
+        padding: 0 12px;
+        margin-bottom: 3px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &:hover {
+    background: @page-bg;
+    border: 1px solid @border-color;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+    section.field-card-section .field-card-section-des {
+      overflow: visible;
+      white-space: pre-wrap;
+      min-height: 28px;
+      height: auto;
+    }
+    .field-card-button {
+      i.field-card-copy-btn {
+        color: @text-color;
+      }
+    }
+    .field-card-main header.field-card-header h3 {
+      color: @text-color;
+    }
+  }
+  &.field-card-create {
+    position: relative;
+    border-style: dashed;
+    background: @page-bg;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: @text-color;
+    &:hover {
+      border-color: @border-color;
+      color: @border-color;
+    }
+    & > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      & > i {
+        font-size: 28px;
+        display: inline-block;
+        width: 100%;
+      }
+      & > span {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+  .field-card-main {
+    header.field-card-header {
+      font-size: 14px;
+      line-height: 14px;
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 9px 16px;
+      height: 40px;
+      box-sizing: border-box;
+      h3 {
+        font-weight: bold;
+        color: @text-color;
+        width: ~'calc(100% - 30px)';
+      }
+    }
+  }
+  .field-card-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    i.field-card-copy-btn {
+      transform: rotate(90deg);
+      cursor: pointer;
+      display: block;
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: @text-color;
+      margin-top: -10px;
+      font-weight: bold;
+    }
+  }
+}

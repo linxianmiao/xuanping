@@ -1,0 +1,84 @@
+@import '~@uyun/everest-styles/index';
+
+.itsm-model-list-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .model-list-header {
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .model-title {
+    display: flex;
+    align-items: center;
+    & > span {
+      padding-left: 5px;
+    }
+  }
+  .u4-table-row-level-0 .add-model-tags {
+    visibility: hidden;
+  }
+  .u4-table-row-level-0:hover {
+    .add-model-tags {
+      visibility: visible;
+      color: @link-color;
+      cursor: pointer;
+    }
+  }
+}
+.model_list_modelstatus_close_tips {
+  .wrap {
+    position: relative;
+  }
+  .wrap_status {
+    color: #3883f8;
+  }
+  .icon1 {
+    color: @text-color-secondary;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: -1px;
+  }
+  .review_tips {
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    width: 200px;
+    z-index: 1;
+  }
+  .tips {
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    width: 275px;
+    background: #f0f8ff;
+    border: 1px solid @link-color;
+    border-radius: 2px;
+    padding: 8px 0 8px 16px;
+    max-height: 400px;
+    overflow: auto;
+    z-index: 100;
+    i {
+      color: @text-color-secondary;
+      margin-right: 5px;
+      margin-top: 3px;
+      display: inline-block;
+    }
+  }
+  .tips_wrap_content {
+    width: 200px;
+    color: #303336;
+    .tips_wrap_content_div {
+      line-height: 20px;
+    }
+  }
+  .span2 {
+    color: #8c939b;
+    float: right;
+    cursor: pointer;
+  }
+  .tips_wrap {
+    display: flex;
+  }
+}

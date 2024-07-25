@@ -1,0 +1,173 @@
+@import '~@uyun/everest-styles/index';
+
+.insert {
+  position: relative;
+}
+.column-width-config-modal {
+  .u4-modal-content {
+    width: 560px;
+    height: 500px;
+    .u4-modal-body {
+      padding: 24px 12px;
+      overflow: hidden;
+    }
+    .u4-table-wrapper {
+      height: 326px;
+      margin-bottom: 20px;
+    }
+    .u4-table-thead > tr > th {
+      padding: 10px 16px;
+    }
+    .u4-table-tbody > tr > td {
+      padding: 3px 16px;
+    }
+    .u4-form-item {
+      margin: 0;
+      display: inline-block;
+    }
+    .cascader-form {
+      margin-right: 8px;
+      width: 141px;
+    }
+    .u4-input-number {
+      width: 90px;
+    }
+  }
+}
+.insert::before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.4rem;
+  border-top: 1px solid @primary-color;
+}
+.queryer_wrap {
+  .list_wrap {
+    .list_title {
+      height: 42px;
+      line-height: 42px;
+      padding: 0 8px;
+      text-align: left;
+      background: @component-background;
+      color: @heading-color;
+      border-bottom: 1px solid @divider-color;
+    }
+  }
+  .container_style {
+    line-height: 42px;
+    cursor: move;
+    background: @page-bg;
+    color: @link-color;
+  }
+  .type_style {
+    padding: 0 16px;
+    line-height: 42px;
+    cursor: move;
+    background: @page-bg;
+    color: @link-color;
+    border-bottom: 1px solid @divider-color;
+  }
+  .chapter_style {
+    padding: 0 8px;
+    line-height: 42px;
+    cursor: move;
+    background: @component-background;
+    color: @link-color;
+    border-bottom: 1px solid @divider-color;
+  }
+  .group_style {
+    padding: 0 8px;
+    line-height: 42px;
+    cursor: move;
+  }
+  .add_item_style {
+    background: @header-bg;
+    padding: 1px 0;
+  }
+  .chapterIcon {
+    color: @link-color;
+  }
+  .set_home {
+    display: none;
+    background-size: 60px 20px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+  }
+  .chapter_style:hover {
+    .set_home {
+      margin-left: 8px;
+      display: inline-block;
+    }
+  }
+  .menu_style:hover {
+    .set_home {
+      margin-left: 8px;
+      display: inline-block;
+    }
+  }
+  .childIcon {
+    margin: 0 10px;
+  }
+  .menu_style {
+    padding: 0 8px;
+    line-height: 42px;
+    cursor: move;
+    background: @page-bg;
+    color: @link-color;
+    border-bottom: 1px solid @border-color;
+  }
+
+  .sub_menu_icon {
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 10px;
+      top: 16px;
+      border-bottom: 1px solid #8c939b;
+      border-left: 1px solid #8c939b;
+    }
+  }
+  .menu_tag {
+    margin-left: 8px;
+    background-color: @primary-color;
+    color: @white;
+    // background-size: 40px 20px;
+    // background-repeat: no-repeat;
+    // width: 40px;
+    // height: 20px;
+    // position: absolute;
+    // top: 10px;
+    // display: inline-block;
+    // cursor: pointer;
+  }
+  .queryer_button_wrap {
+    margin-bottom: 10px;
+    button:last-child {
+      margin: 0 10px;
+    }
+    .u4-btn {
+      padding: 0 16px;
+    }
+  }
+}
+.label_icon {
+  cursor: pointer;
+  font-size: 14px;
+
+  &.label_icon_locked {
+    color: @disabled-color;
+  }
+  &.label_icon_unlock {
+    color: @link-color;
+  }
+}

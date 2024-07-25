@@ -1,0 +1,5 @@
+[
+  ["key", "zh_CN", "en_US"],
+  ["note", "请输入您的注释！", "Please input your note!"],
+  ["itsm-workflow", "itsm-workflow {title}", "itsm-workflow"]
+]

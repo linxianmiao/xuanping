@@ -1,0 +1,109 @@
+@import '~@uyun/everest-styles/index';
+
+.file-tooltip {
+  .u4-form-item-label label {
+    color: #fff;
+  }
+  .u4-form-item-children {
+    color: #fff;
+  }
+  min-width: 184px;
+  .u4-form-item {
+    margin-bottom: 0;
+    .u4-form-item-label {
+      label {
+        height: 20px;
+        line-height: 20px;
+      }
+    }
+    .file-tooltip-item-content {
+      display: inline-block;
+      padding-top: 0;
+    }
+  }
+  .u4-form-item-control {
+    line-height: 20px;
+  }
+}
+.print_modal_close {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 48px !important;
+}
+.drop-button-line {
+  width: 101px;
+  text-align: left;
+}
+.ticket-froms-head-wrap.clearfix {
+  position: relative;
+  padding: 0 12px 0;
+  box-sizing: border-box;
+  background: @component-background;
+  border-bottom: 1px solid @divider-color;
+  margin-bottom: 8px;
+  .head-left {
+    float: left;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 500;
+    .flow-number {
+      margin-left: 8px;
+      border: 1px solid @primary-color;
+      border-radius: 4px;
+      padding: 1px 8px;
+    }
+  }
+  .head-right {
+    float: right;
+    margin-top: 8px;
+    .iconfont-wrap {
+      display: inline-block;
+      vertical-align: middle;
+      height: 28px;
+      padding: 0 6px;
+      border: 1px solid @border-color;
+      text-align: center;
+      line-height: 28px;
+      margin-left: 8px;
+      color: @primary-color;
+      background-color: @page-bg;
+      cursor: pointer;
+      &:first-child {
+        margin-left: 0;
+      }
+      i.icon-yiguanzhu {
+        color: @link-color;
+      }
+    }
+  }
+
+  .job-info-alert {
+    a {
+      float: right;
+    }
+  }
+}
+.more-overlay {
+  background-color: @light-bg;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+  .iconfont {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  div {
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+}
+
+.job-detail-drawer {
+  .u4-spin-nested-loading {
+    height: 100%;
+    .u4-spin-container {
+      height: 100%;
+    }
+  }
+}

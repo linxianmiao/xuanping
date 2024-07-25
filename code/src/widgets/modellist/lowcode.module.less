@@ -1,0 +1,105 @@
+@import '~@uyun/everest-styles/index';
+
+@title-prefix-cls: ~'itsm-modellist';
+
+.@{title-prefix-cls} {
+  padding: 20px 20px 0;
+  height: 100%;
+}
+
+// 滚动条样式
+.scrollbar() {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    border-width: 0;
+    background-color: transparent;
+  }
+}
+.mbt-model-list-filters {
+  padding: 16px;
+}
+
+.mbt-model-list-spin {
+  height: 100%;
+  :global {
+    .u4-spin-container {
+      height: 100%;
+    }
+  }
+}
+.mbt-model-list-wrap {
+  padding: 0 12px 0 5px;
+  height: calc(100% - 64px);
+  overflow-y: auto;
+  .scrollbar();
+}
+
+.model-item {
+  display: inline-block;
+  width: 80px;
+  margin: 0 5px 20px;
+  vertical-align: top;
+
+  &:hover {
+    .model-item-icon-wrap {
+      border: 1px solid @link-color;
+      transition: all 0.3s;
+
+      :global {
+        i.iconfont {
+          color: @link-color;
+          transition: all 0.3s;
+        }
+      }
+    }
+    .model-item-name {
+      color: @link-color;
+      transition: all 0.3s;
+    }
+  }
+
+  .model-item-icon-wrap {
+    margin: 0 auto 6px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid @border-color;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 44px;
+
+    :global {
+      img {
+        margin-top: 12px;
+        width: 20px;
+        height: 20px;
+      }
+      i.iconfont {
+        font-size: 20px;
+        color: @text-color;
+      }
+    }
+  }
+
+  .model-item-name {
+    color: @text-color;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.iframe-loading-wrap {
+  height: 100%;
+
+  :global {
+    .u4-spin-container {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import '~@uyun/everest-styles/index';
+
+.ticket-submit {
+  .u4-btn {
+    vertical-align: middle;
+  }
+}
+.double-line {
+  .u4-form-item {
+    margin-bottom: 12px;
+    padding-bottom: 0;
+  }
+  .u4-form-item-label {
+    padding-bottom: 4px;
+  }
+  .u4-form-item-label label {
+    line-height: 24px;
+    height: 24px;
+  }
+  .u4-form-item-required:before {
+    margin-right: 8px;
+  }
+}
+.check-user-wrap {
+  .line32 {
+    line-height: 32px;
+  }
+  .u4-form-item {
+    margin-bottom: 10px;
+  }
+  .user-wrap-col {
+    border: 1px solid @border-color;
+    padding: 0 10px;
+  }
+}
+.check-user-wrap:not(:first-of-type) {
+  margin-top: 10px;
+}
+.check-user-wrap:last-of-type {
+  margin-bottom: 10px;
+}
+.detail-ticket-btns .ec-side-modal-body {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  .create-submodel-forms-wrap {
+    margin: 0 20px;
+    padding-top: 20px;
+    height: 100%;
+  }
+}
+.detail-ticket-btns {
+  > a {
+    margin-right: 8px;
+  }
+  .Drop-button {
+    button:not(.u4-dropdown-trigger) {
+      margin-right: 0px;
+    }
+  }
+  .u4-dropdown-button.ticket-submit {
+    button {
+      color: #fff;
+      background-color: @component-background;
+      border-color: @border-color;
+      i {
+        color: #fff;
+      }
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+  button,
+  > .u4-tooltip-disabled-compatible-wrapper {
+    margin-right: 8px;
+  }
+  button:last-child {
+    margin-right: 0;
+  }
+  .u4-btn {
+    margin-bottom: 5px;
+  }
+}
+.finish-submit,
+.multi-performer .u4-modal-body {
+  padding: 21px 33px;
+}
+.mgr-right {
+  margin-right: 20px;
+}

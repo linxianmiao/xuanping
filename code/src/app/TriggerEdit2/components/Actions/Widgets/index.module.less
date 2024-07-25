@@ -1,0 +1,32 @@
+@import '~@uyun/everest-styles/index';
+
+.iconStyle {
+  font-size: 16px;
+  color: @link-color;
+  cursor: pointer;
+}
+
+.headers-item {
+  position: relative;
+  margin-bottom: 10px;
+
+  :global {
+    .uyunicon.uyunicon-delete {
+      position: absolute;
+      top: 8px;
+      right: -24px;
+      .iconStyle();
+    }
+  }
+}
+
+.form-data-item {
+  margin-bottom: 10px;
+  line-height: 32px;
+
+  :global {
+    .uyunicon.uyunicon-delete {
+      .iconStyle();
+    }
+  }
+}

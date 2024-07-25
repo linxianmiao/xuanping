@@ -1,0 +1,167 @@
+@import '~@uyun/everest-styles/index';
+
+.left-list {
+  width: 166px;
+  position: absolute;
+  left: 52px;
+  top: 0;
+  bottom: 0;
+  padding: 10px 0px;
+  overflow: auto;
+  padding: 10px;
+  background: @page-bg;
+  .my-iframe {
+    position: fixed;
+    z-index: 12;
+    top: 155px;
+    border: none;
+    transform: translateX(-17px);
+    &.disabled {
+      visibility: hidden;
+    }
+  }
+  .load-field-btn {
+    width: ~'calc(100% - 42px)';
+    height: 32px;
+    line-height: 32px;
+    background: @page-bg;
+    border: 1px solid @border-color;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: @text-color;
+    float: left;
+    cursor: pointer;
+  }
+  .add-field-btn {
+    float: right;
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 32px;
+    background: @page-bg;
+    border: 1px solid @border-color;
+    border-radius: 2px;
+    color: @text-color;
+    cursor: pointer;
+  }
+  .list-item-wrap {
+    padding-top: 16px;
+  }
+  .list-item {
+    padding: 0 16px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: @text-color;
+    letter-spacing: 0;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 6px;
+    text-align: left;
+    border: 1px solid transparent;
+    i {
+      font-size: 14px;
+      margin-right: 5px;
+    }
+    cursor: move;
+    &.disabled-move {
+      cursor: no-drop;
+      background: @disabled-bg;
+      border: 1px solid @border-color;
+      color: @disabled-color;
+    }
+    &.can-move {
+      background: @page-bg;
+      border-color: @light-bg;
+      color: @text-color;
+    }
+  }
+}
+.model-feild-left-wrap {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid @border-color;
+  .menu-select {
+    width: 54px;
+    height: 100%;
+    float: left;
+    background: @page-bg;
+    border-right: 1px solid @border-color;
+
+    .item {
+      position: relative;
+      height: 52px;
+      width: 52px;
+      line-height: 52px;
+      text-align: center;
+      color: @text-color;
+      cursor: pointer;
+      &.custom-script-btn {
+        position: absolute;
+        bottom: 0;
+      }
+      &.active {
+        background: @page-bg;
+        color: @text-color;
+        border-top: 1px solid @border-color;
+        border-bottom: 1px solid @border-color;
+        &:after {
+          content: ' ';
+          position: absolute;
+          left: -1px;
+          top: -1px;
+          bottom: -1px;
+          width: 4px;
+          background: #1f99e5;
+        }
+      }
+    }
+  }
+  .left-group-list {
+    width: 166px;
+    position: absolute;
+    left: 52px;
+    top: 0;
+    bottom: 0;
+    padding: 10px 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: @page-bg;
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 114px;
+        background: @page-bg;
+        border: 1px solid @border-color;
+        cursor: pointer;
+        text-align: center;
+        margin: 14px 0;
+        i,
+        span {
+          display: block;
+        }
+        i {
+          font-size: 30px;
+          color: @text-color;
+        }
+        span {
+          line-height: 18px;
+          color: @text-color;
+        }
+      }
+    }
+    h3 {
+      color: @text-color;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '~@uyun/everest-styles/index';
+
+.edit-input {
+  & > span {
+    word-break: break-all;
+  }
+  & > i {
+    margin-left: 14px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  :global {
+    .uyunicon-check {
+      color: @success-color;
+    }
+    .uyunicon-close {
+      color: @error-color;
+    }
+    .uyunicon-edit {
+      color: @text-color-secondary;
+      &:hover {
+        color: @link-color;
+      }
+    }
+  }
+}
+
+.appkey {
+  span {
+    color: @link-color;
+  }
+  i {
+    font-size: 12px;
+    color: @hits-color;
+    cursor: pointer;
+    &:hover {
+      color: @link-color;
+    }
+  }
+}

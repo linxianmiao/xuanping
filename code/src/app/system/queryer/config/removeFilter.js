@@ -1,0 +1,22 @@
+export default [
+  'extraParams',
+  'modelId',
+  'wd',
+  'executor',
+  'creator',
+  'priority',
+  'source',
+  'status',
+  'overdue',
+  'filterOrg',
+  'modelAndTacheId',
+  'executionGroup',
+  'name',
+  'viewName',
+  'viewId',
+  'extParams',
+  'create_time',
+  'update_time',
+  'orderBy',
+  'sortRule'
+]

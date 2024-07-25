@@ -1,0 +1,52 @@
+@import '~@uyun/everest-styles/index';
+
+.itsm-ticket-field-job-modal .u4-modal-body {
+  background: @page-bg;
+}
+.job-detail-drawer {
+  .u4-spin-nested-loading {
+    height: 100%;
+    .u4-spin-container {
+      height: 100%;
+    }
+  }
+}
+.itsm-field-job-table-status {
+  .iconfont {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .executing {
+    color: #4fc1ff;
+  }
+  .await {
+    color: #b8bec8;
+  }
+  .error {
+    color: #ff4848;
+  }
+  .success {
+    color: #3cd768;
+  }
+}
+.itsm-field-job-table-operate {
+  .link-wrap {
+    &.disabled a {
+      color: @disabled-color;
+    }
+    a:first-child {
+      padding-right: 10px;
+      position: relative;
+      &:after {
+        content: '|';
+        position: absolute;
+        right: 0;
+        top: -2px;
+        color: @page-bg;
+      }
+    }
+    a:last-child {
+      padding-left: 7px;
+    }
+  }
+}

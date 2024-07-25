@@ -1,0 +1,44 @@
+@import '~@uyun/everest-styles/index';
+
+.attentionWrapper {
+  display: flex;
+
+  .attentionWrapper-menu {
+    width: 200px;
+    height: 400px;
+
+    .u4-menu-list-content {
+      position: relative;
+    }
+
+    .u4-menu-list-content-menu > .u4-menu {
+      margin-left: 0;
+    }
+
+    .menu-auto {
+      width: 100%;
+      height: 51px;
+      background: @component-background;
+      line-height: 51px;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .u4-select-auto-complete {
+        width: 175px;
+        margin-left: 12px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .attentionWrapper-list {
+    margin-left: 10px;
+    width: calc(100% - 210px);
+  }
+
+  .submenu-selected {
+    background: @active-color;
+    color: @primary-color !important;
+  }
+}

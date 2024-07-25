@@ -1,0 +1,44 @@
+@import '~@uyun/everest-styles/index';
+
+.portrait-item-wrap {
+  .header {
+    position: relative;
+    height: 40px;
+    padding: 0 28px;
+    line-height: 40px;
+    background: @header-bg;
+    color: @heading-color;
+    border: 1px solid @border-color;
+    position: relative;
+    i.arrow {
+      position: absolute;
+      left: 0px;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      color: @text-color;
+      transition: transform 0.3s;
+      transform: rotate(0deg);
+      padding: 0 10px;
+      &.down {
+        transform: rotate(90deg);
+      }
+    }
+    i.icon-shanchu {
+      position: absolute;
+      right: 28px;
+      top: 0;
+      cursor: pointer;
+      color: @text-color;
+    }
+  }
+  .content {
+    min-height: 100px;
+    padding: 15px 10px;
+    color: @text-color;
+    background: @page-bg;
+    border-bottom: 1px solid @border-color;
+    border-right: 1px solid @border-color;
+    border-left: 1px solid @border-color;
+  }
+}

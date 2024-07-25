@@ -1,0 +1,280 @@
+@import '~@uyun/everest-styles/index';
+
+@title-prefix-cls: ~'itsm-ticketlist';
+
+.clearfix {
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+.tab-title {
+  width: 100%;
+  // height: 56px;
+  display: flex;
+  flex-direction: column;
+  .iconfont {
+    line-height: 20px;
+    margin-top: 1px;
+  }
+  .tab-info {
+    display: flex;
+    justify-content: space-around;
+  }
+  .tab-title-span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+
+    span {
+      font-size: 16px;
+      font-family: DIN;
+    }
+  }
+
+  .tab-divider {
+    width: 98px;
+    height: 1.98px;
+    background: @primary-color;
+    border-radius: 2px 2px 0 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+// .tab-drop {
+//   .tab-title {
+//     height: 40px;
+//     line-height: 40px;
+//     .tab-title-span {
+//       display: inline-block;
+//       margin-left: 6px;
+//     }
+//   }
+// }
+
+.@{title-prefix-cls} {
+  position: relative;
+  height: 100%;
+  .clearfix;
+  padding: 16px;
+
+  :global {
+    .u4-tabs-nav {
+      padding-left: 0;
+    }
+    .u4-tabs-tab {
+      width: 100px;
+      height: 56px;
+      // width: 140px;
+      margin-right: 8px !important;
+      border-radius: 4px 4px 0 0 !important;
+      padding: 4px 7px !important;
+      padding: 0;
+      color: @text-color-secondary;
+      position: relative;
+      .u4-tabs-tab-btn {
+        width: 100%;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+    .u4-tabs-tab-active {
+      span {
+        color: @link-color;
+      }
+    }
+    .u4-table-thead th.u4-table-column-sort {
+      background: #ebf1fb;
+    }
+  }
+
+  .ticket-list-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    .advanced-screen-btn {
+      display: inline-block;
+      padding: 5px 16px;
+      margin-left: 5px;
+      &.active {
+        border: 1px solid @divider-color;
+        border-bottom: 11px solid @header-bg;
+        background-color: @header-bg;
+        margin-bottom: -13px;
+      }
+      i {
+        transform: rotate(-90deg);
+        transition: all 0.3s;
+        &.active {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .ticket-list-table {
+    height: 100%;
+    .table-th-priority {
+      padding: 2px 4px;
+      color: #fff;
+      &.priority1 {
+        background: #b3c1d4;
+      }
+      &.priority2 {
+        background: #76dd6c;
+      }
+      &.priority3 {
+        background: #fad541;
+      }
+      &.priority4 {
+        background: #ff794c;
+      }
+      &.priority5 {
+        background: #fb4d4a;
+      }
+    }
+    .ticket-list-table-th-status {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      i {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.create-ticket-spin {
+  text-align: center;
+  height: 490px;
+  line-height: 490px;
+}
+.create-ticket-card-list {
+  float: left;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  .create-ticket-card-item {
+    position: relative;
+    display: flex;
+    height: 66px;
+    width: 238px;
+    padding: 12px 24px;
+    overflow: hidden;
+    cursor: pointer;
+    background: @light-bg;
+    color: @text-color;
+    border-radius: 2px;
+    align-items: center;
+    border: 1px solid @border-color;
+    i {
+      font-size: 28px;
+    }
+    &:hover {
+      background: @link-color;
+      color: @active-color;
+    }
+    img {
+      width: 28px;
+      height: 28px;
+    }
+    span {
+      margin-left: 16px;
+    }
+  }
+}
+
+.ticket-filter-wrap {
+  background-color: @header-bg;
+  padding: 12px;
+  border: 1px solid @divider-color;
+
+  .u4-select-selector {
+    min-height: 26px;
+  }
+  .u4-picker-range {
+    width: 100%;
+  }
+
+  .filter-btn {
+    display: flex;
+    justify-content: flex-end;
+    height: 24px;
+    align-items: center;
+    margin-top: 4px;
+    button {
+      width: 60px;
+      &:last-child {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .filter-row {
+    :global {
+      .u4-select-selection-item {
+        height: 14px !important;
+      }
+      .u4-form-item {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.shenglue {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filter-icon {
+  margin-left: 3px;
+  transition: transform 0.3s;
+  &.active {
+    transform: rotate(-180deg);
+  }
+}
+
+.table-text {
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fullscreen {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  height: calc(100% - 48px);
+  background: @component-background;
+  overflow-y: auto;
+}
+.fullscreenIcon {
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 10;
+  font-size: 16px;
+}

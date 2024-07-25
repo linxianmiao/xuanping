@@ -1,0 +1,452 @@
+@import '~@uyun/everest-styles/index';
+
+@ticket-form: @primary-color;
+@item-color: @text-color;
+@tip-bg: @component-background;
+@tip1-color: @hits-color;
+
+.line-menu-wrap {
+  max-height: 262px;
+  overflow: auto;
+  padding: 0;
+}
+.param-dropDown {
+  width: 369px;
+  max-height: 300px;
+  overflow: hidden;
+  padding: 5px 10px;
+  overflow-y: auto;
+  background: @component-background;
+  .u4-checkbox-wrapper {
+    padding: 5px 0;
+  }
+}
+
+.side-node-modal-wrap {
+  width: 0;
+  height: 0;
+}
+.exclusiveGateway-wrap {
+  .u4-checkbox {
+    vertical-align: top;
+    top: 3px;
+  }
+}
+.related-wrap {
+  .related-content {
+    .related-item {
+      margin: 10px 0;
+    }
+  }
+}
+.side-node-modal-tips {
+  width: 29.6%;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  bottom: 0px;
+  background-color: @tip-bg;
+  color: @text-color-secondary;
+  border-right: none;
+  overflow-y: auto;
+  padding: 13px 16px;
+  .side-node-line {
+    height: 1px;
+    margin: 20px 16px 20px 1px;
+    // background-color: @divider-color;
+  }
+  .side-node-content {
+    padding: 35px 10px 12px;
+    li {
+      line-height: 20px;
+      margin: 5px 0;
+    }
+  }
+}
+.model-node-drawer {
+  .u4-row {
+    width: 100%;
+    .u4-collapse {
+      width: 100%;
+    }
+  }
+  #pG {
+    // .u4-form-item{
+    //   margin-bottom: 0px;
+    // }
+  }
+  .itsm-users-input-wrap > .u4-input {
+    overflow: auto;
+  }
+  #TimingTask {
+    color: @text-color-secondary;
+    .u4-time-picker-input {
+      height: 32px;
+    }
+    .TimingTaskTips {
+      position: absolute;
+      bottom: -17%;
+      left: 16px;
+      right: 16px;
+      color: @hits-color;
+    }
+  }
+  #AutomaticDelivery {
+    .icon-tips {
+      margin-left: 5px;
+      color: @hits-color;
+      cursor: pointer;
+    }
+  }
+  .left_label {
+    height: 39px;
+    line-height: 39px;
+    text-align: right;
+  }
+  .auto_param_content_fl {
+    width: 32%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .auto_param_content_fr {
+    width: 66%;
+    display: inline-block;
+    margin-left: 2%;
+    vertical-align: -2px;
+  }
+  .auto_param_content_user {
+    height: 41px;
+    padding-top: 5px;
+    .u4-form-item-children {
+      position: relative;
+      .auto_param_content_fl1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 125px;
+      }
+      .auto_param_content_fr1 {
+        position: absolute;
+        top: -7px;
+        left: 132px;
+        width: 195px;
+      }
+    }
+  }
+  #userTask,
+  #autoTask,
+  #line,
+  #startNode,
+  #exclusiveGateway,
+  #AutomaticDelivery,
+  #remoteRequest {
+    .coll-header {
+      width: 100%;
+      height: 28px;
+      line-height: 28px;
+      padding: 0 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid @divider-color;
+      background: @header-bg;
+    }
+  }
+  .has-error .u4-select-selection {
+    border-color: @error-color;
+  }
+  .side-node-content {
+    padding: 12px 16px 12px 0;
+    .u4-form-item {
+      margin-bottom: 16px;
+    }
+    .ticket-from {
+      margin-top: 6px;
+      margin-left: 3px;
+      & > a {
+        color: @primary-color;
+      }
+    }
+  }
+  .users-tips {
+    .tagIput {
+      border-color: @error-color;
+    }
+  }
+  #proSetField {
+    .u4-select {
+      width: 100%;
+    }
+    .u4-form-explain {
+      top: 40px;
+      position: absolute;
+    }
+    // .mb-20{
+    //   .u4-select-selection--single{
+    //     margin-bottom: 10px;
+    //   }
+    // }
+    .u4-select-selection--single {
+      height: 32px;
+    }
+    .u4-select-selection__rendered {
+      line-height: 30px;
+    }
+  }
+  .from-form {
+    margin-bottom: 16px;
+    .u4-form-item {
+      margin-bottom: 0px;
+    }
+  }
+  .line_param_wrap {
+    margin-bottom: 15px;
+    .line_param_content {
+      background: @divider-bg;
+      min-height: 73px;
+      margin: 5px 0;
+      padding: 8px 10px 5px;
+      .line_param_content_fl {
+        width: 35%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .line_param_content_fr {
+        width: 63%;
+        display: inline-block;
+        margin-left: 2%;
+        vertical-align: middle;
+        // margin-bottom: -2px; //我也不知道为啥他的高度是36px; 我还不能写死高度
+        // line-height: 0.98;
+        // height: 32px;
+        .u4-select {
+          float: right;
+        }
+        .u4-select-selection--multiple {
+          max-height: 85px;
+          overflow: auto;
+        }
+        .tagIput {
+          overflow: auto;
+          max-height: 85px;
+        }
+      }
+      .u4-input-number {
+        width: 100%;
+      }
+      & > input {
+        min-height: 32px;
+        max-height: 32px;
+      }
+      .line_param_title {
+        height: 28px;
+        p {
+          float: left;
+          color: @text-color-secondary;
+        }
+        .uyunicon {
+          float: right;
+          color: @text-color-secondary;
+          margin-top: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .required-item {
+    color: @item-color;
+    margin-bottom: 10px;
+    .required-item-icon {
+      color: #f50;
+    }
+  }
+  .rollbackTips {
+    color: @hits-color;
+    vertical-align: -2px;
+    margin-left: 5px;
+  }
+  .addSignTips {
+    color: @hits-color;
+    vertical-align: -2px;
+  }
+  .tip1 {
+    color: @tip1-color;
+  }
+  .required-content {
+    margin-top: 5px;
+    line-height: 24px;
+    height: 28px;
+    background: @light-bg;
+    border: 1px dashed @border-color;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    i {
+      vertical-align: bottom;
+    }
+  }
+  .arrange-item {
+    h4 {
+      color: @heading-color;
+    }
+    .paramButton {
+      height: 35px;
+      border-radius: 4px;
+      margin-top: 15px;
+    }
+    .ant-form-item-label {
+      padding: 0;
+    }
+    .parameter-item {
+      margin-bottom: 10px;
+      .u4-btn {
+        padding: 1px 7px;
+      }
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      .parameter-item-name {
+        display: inline-block;
+        vertical-align: middle;
+        width: 200px;
+        height: 32px;
+        line-height: 1;
+        border: 1px solid @border-color;
+        border-radius: 2px;
+        background: @component-background;
+        color: @text-color;
+        padding: 7px;
+        .parameter-item-name-require {
+          &:before {
+            display: inline-block;
+            margin-right: 4px;
+            content: '*';
+            font-family: SimSun;
+            font-size: 12px;
+            color: @error-color;
+            font-style: normal;
+          }
+        }
+      }
+      .parameter-item-jiantou {
+        display: inline-block;
+        margin: 0 20px;
+        transform: rotate(-90deg);
+        color: @text-color;
+      }
+      .parameter-item-value {
+        display: inline-block;
+        vertical-align: middle;
+        width: 200px;
+        .u4-checkbox-wrapper {
+          line-height: 1.5;
+        }
+        .parameter-item-red {
+          .u4-select-selection.u4-select-selection--single {
+            border-color: @error-color;
+          }
+        }
+      }
+      .parameter-item-typebtn {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 20px;
+      }
+      .parameter-item-del {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+.side-node-modal.start,
+.side-node-modal.manual,
+.side-node-modal.end {
+  width: 260px;
+}
+.side-node-modal.auto,
+.side-node-modal.autoHandle {
+  width: 740px;
+}
+.side-node-header {
+  line-height: 40px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: @header-bg;
+  //margin-bottom: 16px;
+}
+.side-node-title {
+  font-size: 14px;
+  color: @heading-color;
+}
+.side-node-close {
+  float: right;
+  > .icon-cha {
+    font-size: 16px;
+    font-weight: bold;
+    color: @text-color;
+    vertical-align: -1px;
+    cursor: pointer;
+  }
+}
+.side-node-content-item {
+  .is-required:before {
+    display: inline-block;
+    margin-right: 4px;
+    content: '*';
+    font-family: SimSun;
+    line-height: 1;
+    font-size: 12px;
+    color: @error-color;
+  }
+  span.u4-radio + * {
+    padding-left: 3px;
+  }
+  .item-collapse {
+    .item-collapse-title {
+      color: @text-color;
+      float: left;
+    }
+    .u4-radio-wrapper {
+      float: right;
+    }
+    .right {
+      float: right;
+      display: none;
+    }
+    .iconfont {
+      font-size: 14px;
+      margin-right: 10px;
+      line-height: 20px;
+    }
+  }
+  .item-collapse:hover {
+    .right {
+      display: block;
+    }
+  }
+  .u4-collapse-item-active {
+    .item-collapse-title {
+      color: @primary-color;
+    }
+    .u4-collapse-header .iconfont {
+      color: @primary-color;
+    }
+  }
+}
+
+.side-node-content-item + .side-node-content-item {
+  margin-top: 15px;
+}
+.side-node-content-item-title {
+  color: @text-color;
+  margin-bottom: 4px;
+}
+.side-node-content-item-tips {
+  color: @text-color-secondary;
+  margin-top: 5px;
+  a {
+    color: @primary-color;
+  }
+}

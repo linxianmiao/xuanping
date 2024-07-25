@@ -1,0 +1,56 @@
+@import '~@uyun/everest-styles/index';
+
+.system-config-portal-header {
+  padding: 40px 0 20px;
+  text-align: center;
+  height: 92px;
+  .u4-radio-button-wrapper {
+    min-width: 100px;
+    font-size: 14px;
+  }
+}
+.system-config-portal {
+  height: 100%;
+  overflow: auto;
+}
+.system-config-portal-body {
+  height: e('calc(100% - 92px)');
+}
+.system-config-portal-config {
+  padding: 20px 60px;
+  > div {
+    margin-top: 40px;
+  }
+}
+.portal-config-tips {
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: @text-color;
+  .iconfont {
+    margin-right: 5px;
+    vertical-align: -1px;
+  }
+}
+.portal-config-url-detail {
+  color: @text-color;
+  .title {
+    color: @text-color;
+    font-size: 14px;
+  }
+  .url {
+    font-size: 16px;
+  }
+  .operation {
+    margin-top: 20px;
+    button {
+      margin-right: 10px;
+    }
+  }
+  > h1 {
+    color: @text-color;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,118 @@
+@import '~@uyun/everest-styles/index';
+
+.select-user-choose-user-wrap {
+  .u4-modal-body {
+    padding: 0;
+  }
+}
+.select-user-choose-user {
+  overflow: hidden;
+  width: 600px;
+  &.select-user-choose-group {
+    width: 620px;
+  }
+  .content-wrap {
+    padding: 20px 30px;
+    position: static;
+  }
+  .group-list {
+    float: left;
+    height: 280px;
+    border: 1px solid @border-color;
+    padding: 5px;
+    background: @page-bg;
+    width: 150px;
+    margin: 0 3px 0 0;
+    overflow: auto;
+    & > li {
+      margin-bottom: 2px;
+    }
+  }
+  .user-list-wrap {
+    background: @page-bg;
+    width: 150px;
+    margin: 0 3px;
+    float: left;
+    height: 280px;
+    border: 1px solid @border-color;
+    margin-left: 70px;
+    overflow: hidden;
+  }
+  .search-box {
+    position: relative;
+    color: #69c1ff;
+    width: 132px;
+    margin: 5px;
+    padding-left: 0;
+    height: 32px;
+    .u4-input {
+      background: @page-bg;
+    }
+  }
+  .user-list {
+    overflow: auto;
+    height: 236px;
+    padding: 1px 5px 5px;
+    li {
+      margin-bottom: 2px;
+    }
+  }
+  .operate {
+    padding: 60px 0;
+    width: 98px;
+    border: 0;
+    float: left;
+    height: 280px;
+    li {
+      margin-bottom: 5px;
+      text-align: center;
+      color: #335b77;
+    }
+    .u4-btn {
+      width: 98px;
+      padding: 0;
+      height: 32px;
+      line-height: 30px;
+      position: relative;
+      text-align: center;
+    }
+    .seperate {
+      margin-bottom: 20px;
+    }
+  }
+  .selected-users {
+    background: @page-bg;
+    width: 150px;
+    margin: 0 0 0 3px;
+    float: left;
+    height: 280px;
+    border: 1px solid @border-color;
+    padding: 5px;
+    overflow: auto;
+    li {
+      margin-bottom: 2px;
+      display: inline-block;
+    }
+  }
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background: @page-bg;
+    border-top: 1px solid @border-color;
+    .u4-btn {
+      &:last-child {
+        margin-left: 15px;
+        background: transparent;
+        color: @text-color;
+      }
+    }
+  }
+}
+.tags-list {
+  border: 1px solid @border-color;
+  margin-top: 10px;
+  padding: 2px;
+  background: @page-bg;
+  overflow: hidden;
+}

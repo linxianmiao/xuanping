@@ -1,0 +1,122 @@
+@import '~@uyun/everest-styles/index';
+
+// 滚动条样式
+.scrollbar() {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    border-width: 0;
+    background-color: transparent;
+  }
+}
+
+.search-drawer {
+  .drawer-body {
+    padding: 0;
+
+    .search-drawer-body {
+      position: relative;
+      // height: calc(100% - 78px);
+      height: 100%;
+
+      .search-drawer-body-left {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 190px;
+        padding: 30px 10px 16px 16px;
+        border-right: 1px solid @border-color;
+        .u4-select {
+          width: 100%;
+        }
+        h3 {
+          font-size: 14px;
+        }
+
+        .search-filters {
+          & > p:nth-child(1) {
+            margin-top: 12px;
+          }
+          & > p:not(:nth-child(1)) {
+            margin-top: 16px;
+          }
+        }
+      }
+
+      .search-drawer-body-right {
+        display: flex;
+        flex-direction: column;
+        margin-left: 190px;
+        padding: 30px 5px 16px 13px;
+        height: 100%;
+
+        .search-drawer-header {
+          position: relative;
+          padding-right: 10px;
+        }
+
+        .search-drawer-mid {
+          padding: 24px 10px 10px 0;
+          border-bottom: 1px solid @border-color;
+
+          .search-total-tip {
+            color: @text-color;
+          }
+
+          & > a {
+            float: right;
+          }
+        }
+
+        .u4-spin-nested-loading {
+          flex-grow: 1;
+          overflow-y: auto;
+          .scrollbar();
+        }
+
+        .u4-list {
+          .u4-list-item {
+            cursor: pointer;
+            &:hover {
+              background: @light-bg;
+            }
+
+            .u4-list-item-meta {
+              margin-bottom: 6px;
+
+              .u4-list-item-meta-content {
+                .u4-list-item-meta-description {
+                  color: @text-color;
+
+                  .search-result-highlight {
+                    color: @text-color;
+                  }
+                }
+              }
+            }
+
+            .u4-list-item-content {
+              margin: 0;
+              color: @text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-history-dropdown {
+  width: 412px;
+  .u4-dropdown-menu {
+    padding: 0 14px 14px;
+    .u4-tag {
+      margin-top: 10px;
+    }
+  }
+}

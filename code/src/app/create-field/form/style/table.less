@@ -1,0 +1,82 @@
+@import '~@uyun/everest-styles/index';
+
+.table-options-content {
+  width: 100%;
+  table {
+    width: 100%;
+  }
+  thead {
+    background: @header-bg;
+    color: @text-color;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid @border-color;
+    text-align: left;
+    th {
+      padding-left: 10px;
+    }
+  }
+  tbody {
+    td {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.12);
+      border-bottom: 1px solid @border-color;
+    }
+    .icon-shanchu {
+      color: #2db7f5;
+      cursor: pointer;
+      font-size: 14px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      background: transparent;
+    }
+  }
+}
+
+.table-field-columns-config {
+  .u4-table-body {
+    tr {
+      th.table-extra-td,
+      td.table-extra-td {
+        width: 28px;
+        border-bottom: none;
+        background: @page-bg;
+
+        .uyunicon-close-circle {
+          color: @error-color;
+          cursor: pointer;
+        }
+      }
+
+      &:hover {
+        .table-extra-td {
+          background: @page-bg;
+        }
+      }
+    }
+  }
+}
+
+.table-field-content-config {
+  .u4-table {
+    .u4-table-fixed-right,
+    .u4-table-scroll {
+      .u4-table-fixed {
+        tr {
+          th.table-extra-td,
+          td.table-extra-td {
+            width: 28px;
+            border-bottom: none;
+            background: @page-bg;
+
+            .uyunicon-close-circle {
+              color: @error-color;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

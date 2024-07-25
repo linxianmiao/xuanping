@@ -1,0 +1,8 @@
+{
+  "path":"/itsm",
+  "icon":"icon-guanlian iconfont",
+  "name": "relateTicketNum",
+  "type":"relateTicketNum",
+  "fieldTypeName_en":"relateTicketNum",
+  "fieldTypeName_zh":"关联工单"
+}

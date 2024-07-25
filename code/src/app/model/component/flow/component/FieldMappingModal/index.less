@@ -1,0 +1,43 @@
+@import '~@uyun/everest-styles/index';
+
+// 滚动条样式
+.scrollbar() {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-width: 0;
+  }
+  &::-webkit-scrollbar-track {
+    border-width: 0;
+    background-color: transparent;
+  }
+}
+
+.process-field-mapping {
+  .u4-transfer-list-header {
+    .u4-checkbox-wrapper {
+      margin-right: 10px;
+    }
+    .u4-transfer-list-header-selected {
+      position: absolute;
+      top: 6px;
+      right: 12px;
+    }
+  }
+
+  .u4-transfer-list-body {
+    .u4-menu {
+      height: 100%;
+      overflow-y: auto;
+      .scrollbar();
+
+      & > li {
+        font-size: 12px;
+        height: 32px;
+        line-height: 32px;
+        color: @text-color;
+      }
+    }
+  }
+}

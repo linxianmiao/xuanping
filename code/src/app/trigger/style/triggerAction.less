@@ -1,0 +1,91 @@
+@import '~@uyun/everest-styles/index';
+
+  .notification-wrap{
+    .u4-dropdown{
+      max-height: 550px;
+      overflow: auto;
+    }
+    .line1:hover,.line2:hover{
+      cursor: inherit;
+      background: none;
+    }
+    .u4-dropdown-menu-submenu-title,  .u4-dropdown-menu-item{
+      padding: 7px 15px 7px 30px;
+    }
+    .line1,.line2{
+      padding: 7px 15px 7px 15px;
+    }
+    .ul-menu-item{
+      background: @light-bg
+    }
+    &.noti-label{
+      margin-bottom: 20px;
+      label{
+        color: @text-color;
+      }
+      .add-trigger-btn{
+        margin-bottom: 0;
+      }
+    }
+    .u4-form-item-label{
+      label{
+        color: @text-color;
+      }
+    }
+    .add-trigger-btn{
+      background: @light-bg;
+      border-color: @border-color;
+    }
+    .u4-collapse{
+      margin-top: 12px;
+    }
+    .user-list-menu-item{
+      position: relative;
+      i{
+        position: absolute;
+        right: 10px;
+        top: -2px;
+      }
+    }
+    .u4-collapse-header{
+      font-size: 14px;
+      padding-right: 15px;
+    }
+    .trigger-action-wrap{
+      .u4-tabs-extra-content {
+        float: left!important;
+        margin-right: 2px;
+        margin-bottom: 2px;
+      }
+      .userSelect{
+          padding-top: 3px;
+      }
+      .user-list{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        min-height: 32px;
+        line-height: 28px;
+        border: 1px solid @border-color;
+        border-radius: 2px;
+        background: @light-bg;
+        color: @text-color;
+        width: 83.33333333%;
+        &.default-height{
+          min-height: 32px;
+          overflow-y: auto;
+          width: 100%;
+          padding: 2px;
+        }
+      }
+      // .u4-form-item{
+      //   margin: 24px !important;
+      // }
+      .left-select{
+        width: 83.33333333%;
+      }
+      .right-select{
+        padding: 0 8px;
+      }
+    }
+  }

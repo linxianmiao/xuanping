@@ -1,0 +1,148 @@
+@import '~@uyun/everest-styles/index';
+
+.databaseWrapper {
+  width: 100%;
+  .dataBase {
+    // display: flex;
+    // margin: 10px;
+    // width: 100%;
+  }
+}
+.dataBase-search {
+  // width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  .database-filter-list {
+    flex: 1;
+    .filter-icon {
+      width: 87px;
+      padding: 0 10px;
+      height: 32px;
+      line-height: 32px;
+      color: @text-color-secondary;
+      cursor: pointer;
+      &.active {
+        background: @header-bg;
+        border: 1px solid @divider-color;
+        border-bottom: 40px solid @header-bg;
+        color: @link-color;
+        margin-bottom: -1px;
+      }
+    }
+    .u4-form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+.database-filter-list-item {
+  margin-top: -12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 300px;
+  overflow-y: auto;
+  background: @header-bg;
+  border: 1px solid @divider-color;
+  border-radius: 2px;
+  padding: 11px;
+}
+.database-info {
+  height: 100%;
+  .database-info-divider {
+    margin: 0;
+  }
+  .u4-steps {
+    display: flex;
+    justify-content: center;
+    .u4-steps-item {
+      max-width: 228px !important;
+    }
+  }
+  .u4-steps-navigation .u4-steps-item::after {
+    display: none !important;
+  }
+  .steps-content {
+    height: 80%;
+    //   min-height: 200px;
+    margin-top: 16px;
+    // padding-top: 80px;
+    text-align: center;
+    border-radius: 2px;
+  }
+}
+.steps-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  line-height: 47px;
+  text-align: center;
+  background-color: @component-background;
+  border-top: 1px solid @divider-color;
+  .u4-btn {
+    margin-right: 10px;
+  }
+}
+[data-theme='compact'] .site-navigation-steps,
+.site-navigation-steps {
+  margin-bottom: 60px;
+  box-shadow: 0 -1px 0 0 var(--border-color, #d3d9e2) inset;
+}
+
+#components-table-demo-drag-sorting tr.drop-over-downward td {
+  border-bottom: 2px dashed #1890ff;
+}
+
+#components-table-demo-drag-sorting tr.drop-over-upward td {
+  border-top: 2px dashed #1890ff;
+}
+.dataBase-btn {
+  .u4-btn {
+    margin-left: 10px;
+  }
+}
+
+.field-header {
+  width: 240px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-between;
+  .field-header-item {
+    width: 120px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+    cursor: pointer;
+    border-radius: 4px;
+    i {
+      margin-right: 10px;
+    }
+    &:hover {
+      background-color: @page-bg;
+    }
+  }
+}
+
+.database-fields {
+  height: 92%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.disabled-item {
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  right: -99999px;
+}
+.drawer-btn {
+  text-align: center;
+  .u4-btn {
+    margin-right: 10px;
+  }
+}

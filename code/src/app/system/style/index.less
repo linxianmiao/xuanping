@@ -1,0 +1,39 @@
+@import '~@uyun/everest-styles/index';
+
+.system-config {
+  height: 100%;
+  position: relative;
+}
+.system-config-header {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 13px;
+  color: @text-color;
+  background: @component-background;
+}
+.system-config-header-menu {
+  > li {
+    float: left;
+    min-width: 100px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    > a {
+      color: @text-color;
+      display: block;
+      height: 100%;
+      padding: 0 25px;
+      width: 100%;
+    }
+  }
+  > li.active {
+    border-bottom: 2px solid @primary-color;
+    > a {
+      color: @active-color;
+    }
+  }
+}
+.system-config-body {
+  margin-top: 10px;
+}

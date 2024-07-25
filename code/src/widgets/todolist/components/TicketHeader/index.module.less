@@ -1,0 +1,33 @@
+@import "~@uyun/everest-styles/index";
+
+.ticket-header {
+  .filter-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .filter-text,
+    .batch-text {
+      white-space: nowrap;
+    }
+
+    .filter-icon {
+      margin-left: 3px;
+      transform: rotate(-90deg);
+      transition: transform 0.3s;
+      &.active {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.drawer-iframe {
+  :global {
+    .u4-spin-nested-loading,
+    .u4-spin-container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

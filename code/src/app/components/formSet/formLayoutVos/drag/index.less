@@ -1,0 +1,43 @@
+@import '~@uyun/components/lib/style/mixins/scrollbar';
+
+.form-set-formLayoutVos-drag {
+  #formset-field-wrap {
+    border-right: 1px solid @divider-color;
+  }
+  .menu-select {
+    position: relative;
+    width: 40px;
+    height: 100%;
+    float: left;
+    .u4-menu-item {
+      padding-left: 0px !important;
+      padding-right: 0;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      &:last-child {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .ticketField {
+      height: 50px;
+      line-height: normal;
+      > .u4-menu-title-content {
+        white-space: break-spaces;
+        // padding-left: 4px;
+        > .u4-menu-item-content {
+          white-space: break-spaces;
+        }
+      }
+    }
+  }
+  .right {
+    float: left;
+    width: 162px;
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    .small-scrollbar;
+  }
+}

@@ -1,0 +1,273 @@
+@import '~@uyun/everest-styles/index';
+
+.new-itsm-field-content {
+  width: calc(~'100% - 220px');
+  height: 100%;
+  margin-left: 220px;
+  padding-left: 16px;
+  position: relative;
+  overflow: hidden;
+  .new-itsm-field-content-inner {
+    height: 100%;
+    padding-right: 5px;
+    overflow-y: auto;
+    &.active {
+      margin-right: 220px;
+    }
+  }
+  .field-header {
+    height: 42px;
+    padding: 10px;
+    width: 100%;
+    z-index: 11;
+    background: @page-bg;
+    color: @text-color;
+    &.item-clicked {
+      width: ~'calc(100% - 232px)';
+    }
+    .field-header-left {
+      float: left;
+      span {
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .field-header-left-edit-wrap {
+        position: relative;
+        display: inline-block;
+        padding-right: 50px;
+        .iconfonts-wrap {
+          position: absolute;
+          right: 0;
+        }
+        i.iconfont {
+          cursor: pointer;
+        }
+      }
+    }
+    .field-header-right {
+      float: right;
+      cursor: pointer;
+      i {
+        position: relative;
+        top: 2px;
+        font-size: 16px;
+      }
+      span {
+        font-size: 12px;
+        letter-spacing: 0.44px;
+        line-height: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .u4-form {
+    display: inline-block;
+    width: 100%;
+    height: calc(~'100% - 42px');
+    position: relative;
+    overflow: auto;
+    .field-content-item {
+      position: relative;
+      line-height: 32px;
+      &.active {
+        background: @header-bg;
+        .field-content-item-button {
+          display: flex;
+          position: absolute;
+          z-index: 10;
+          right: 16px;
+          top: 0;
+          width: 100px;
+          height: 100%;
+          justify-content: space-between;
+          align-items: center;
+          i {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+            color: @text-color;
+            padding: 10px;
+            &.disabled {
+              cursor: no-drop;
+            }
+            &.linkageStrategyVos:after {
+              display: block;
+              content: ' ';
+              position: absolute;
+              width: 8px;
+              height: 8px;
+              border-radius: 100%;
+              background: #3883f8;
+              right: 5px;
+              top: 12px;
+            }
+          }
+        }
+        .mask {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: move;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          background: rgba(0, 0, 0, 0.3);
+          border: 1px dashed @border-color;
+        }
+      }
+      .mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+      .u4-form-item {
+        margin-bottom: 0;
+        padding: 12px;
+        text-align: left;
+      }
+      .field-content-item-button {
+        display: none;
+      }
+    }
+    &.item-clicked {
+      width: calc(~'100% - 232px');
+    }
+    .drag_and_drop_fields_here {
+      color: @text-color;
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      border: 1px dashed #225188;
+    }
+  }
+  .field-detail-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: @page-bg;
+    width: 200px;
+    height: 100%;
+    z-index: 99;
+    border: 1px solid @border-color;
+    overflow-y: auto;
+    .field-detail-close {
+      cursor: pointer;
+      position: absolute;
+      top: 13px;
+      right: 17px;
+      i {
+        font-size: 16px;
+        color: @text-color;
+      }
+    }
+    header {
+      font-size: 14px;
+      color: @heading-color;
+      line-height: 20px;
+      padding: 13px 16px;
+      background: @header-bg;
+    }
+    .field-detail-wrap {
+      margin-bottom: 13px;
+      margin-top: 12px;
+      padding: 0 16px;
+
+      .field-detail-title {
+        color: @text-color;
+        font-size: 12px;
+        letter-spacing: 0.44px;
+        margin-bottom: 6px;
+        line-height: 16px;
+      }
+      .field-detail-content {
+        line-height: 18px;
+        font-size: 12px;
+        color: @text-color;
+        .u4-radio-wrapper {
+          color: @text-color;
+        }
+        .u4-radio-disabled + span {
+          color: @text-color;
+        }
+      }
+    }
+  }
+  .field-group-wrap {
+    margin-bottom: 20px;
+    .drag_and_drop_groups_here {
+      color: @text-color;
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      border: 1px dashed #225188;
+    }
+  }
+  .field-group-silder-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: @page-bg;
+    border: 1px solid @border-color;
+    h3 {
+      height: 40px;
+      padding: 0 16px;
+      line-height: 40px;
+      color: @text-color;
+      background: @page-bg;
+      .icon-panding {
+        cursor: pointer;
+        float: right;
+        color: @text-color;
+        transform: scale(0.75);
+      }
+    }
+    .u4-form {
+      padding: 16px;
+    }
+  }
+}
+.resouce-setting {
+  .header-del {
+    margin-right: 20px;
+  }
+  .resource-btn {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .resource-title {
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+  .resource-type {
+    margin-left: 50px;
+    text-decoration: underline;
+  }
+  .resource-item {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 0;
+    .required-item-icon {
+      color: #f50;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+    p {
+      display: inline-block;
+      width: 26%;
+      text-align: right;
+      margin-right: 10px;
+    }
+  }
+}

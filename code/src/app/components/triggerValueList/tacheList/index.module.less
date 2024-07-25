@@ -1,0 +1,65 @@
+@import '~@uyun/everest-styles/index';
+
+.tache-list {
+  width: 600px;
+  background: @light-bg;
+  padding: 10px;
+  .lazy-model-wrap {
+    padding-top: 15px;
+    height: 300px;
+    overflow-y: auto;
+    :global {
+      div,
+      li {
+        position: relative;
+        display: block;
+        padding: 5px 12px;
+        line-height: 22px;
+        color: @text-color;
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover {
+          background-color: @active-color;
+          color: @heading-color;
+        }
+        &.active {
+          background-color: @disabled-bg;
+          color: @heading-color;
+        }
+      }
+    }
+  }
+}
+
+.similarInput {
+  background-color: @light-bg;
+  min-height: 32px;
+  border: 1px solid @divider-color;
+  border-radius: 2px;
+  padding: 7px 12px 2px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.5;
+  &:hover {
+    border-color: @active-color;
+  }
+  .placeholder {
+    color: @hits-color;
+  }
+  :global {
+    .u4-tag {
+      & > span {
+        display: inline-block;
+        max-width: 200px;
+        vertical-align: middle;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      & > i {
+        vertical-align: middle;
+      }
+    }
+  }
+}

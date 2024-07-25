@@ -1,0 +1,36 @@
+@import '~@uyun/everest-styles/index';
+
+.layout-itsm {
+  position: relative;
+  padding-right: 16px !important;
+  .u4-form-item-label {
+    display: flex;
+    align-items: center;
+  }
+  .u4-form-item-label > label {
+    display: unset;
+    white-space: pre-wrap;
+    width: 100%;
+    .form-item-span {
+      max-width: ~'calc(100% - 15px)';
+      display: -webkit-inline-box;
+      height: 32px;
+      overflow: hidden;
+      // line-height: 1.5;
+      vertical-align: middle;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      i.icon-bangzhu {
+        cursor: pointer;
+      }
+    }
+    &.u4-form-item-required .form-item-span {
+      max-width: ~'calc(100% - 23px)';
+    }
+  }
+}
+.btn-label {
+  label {
+    opacity: 0 !important;
+  }
+}

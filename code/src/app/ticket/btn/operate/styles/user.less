@@ -1,0 +1,24 @@
+@import '~@uyun/everest-styles/index';
+
+.tags-lists {
+  cursor: pointer;
+  border: 1px solid @border-color;
+  border-radius: 2px;
+  padding: 2px;
+  min-height: 32px;
+  line-height: 26px;
+  background: transparent;
+  overflow: hidden;
+  color: #4b98ca;
+  &:hover {
+    border: 1px solid @border-color;
+  }
+}
+.tags-lists:empty:before {
+  content: attr(placeholder);
+  padding: 0 7px;
+  color: @text-color;
+}
+.tags-lists:focus:before {
+  content: none;
+}

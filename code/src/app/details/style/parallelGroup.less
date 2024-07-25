@@ -1,0 +1,73 @@
+@import '~@uyun/everest-styles/index';
+
+.parallel-step-pop {
+  .u4-popover-inner {
+    border-radius: 2px;
+  }
+  .u4-popover-arrow {
+    border-right-color: @border-color;
+  }
+  .u4-popover-arrow:after {
+    border-right-color: @border-color;
+  }
+  .u4-steps .u4-steps-head {
+    background: none;
+  }
+  .u4-steps .u4-steps-title {
+    background: none;
+  }
+  .u4-steps .u4-steps-item .u4-steps-head-inner {
+    background: none;
+  }
+  .u4-steps .u4-steps-item.u4-steps-status-process .u4-steps-head-inner {
+    background: #2db7f5;
+  }
+  .u4-steps.u4-steps-small .u4-steps-head-inner {
+    border-width: 2px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .u4-steps .u4-steps-head-inner > .u4-steps-icon {
+    top: -2px;
+  }
+  .u4-steps-vertical .u4-steps-main .u4-steps-description {
+    padding-bottom: 5px;
+  }
+}
+
+.parallel-step-box {
+  width: 200px;
+  background: @page-bg;
+  padding-top: 10px;
+  .u4-steps-status-process {
+    .u4-steps-title,
+    .u4-steps-description {
+      color: @text-color;
+    }
+  }
+  .u4-steps-status-wait {
+    .u4-steps-title,
+    .u4-steps-description {
+      color: @text-color;
+    }
+  }
+  .u4-steps-status-finish {
+    .u4-steps-title,
+    .u4-steps-description {
+      color: @text-color;
+    }
+  }
+  .u4-steps-item {
+    padding: 8px;
+    .u4-steps-tail {
+      display: none;
+    }
+  }
+  .u4-steps-item + .u4-steps-item {
+    margin-top: 10px;
+  }
+  .u4-steps-item.active {
+    border: 1px dashed #5994d6;
+  }
+}

@@ -1,0 +1,39 @@
+@import '~@uyun/everest-styles/index';
+
+.model-tabs {
+  position: relative;
+  background: @component-background;
+  .tab-pane-wrap .tab-pane {
+    overflow: auto;
+    .help {
+      float: left;
+      line-height: 40px;
+      color: @text-color;
+      cursor: pointer;
+      i {
+        position: relative;
+        top: 2px;
+      }
+      span {
+        padding-left: 4px;
+      }
+    }
+    .flow-expand {
+      float: right;
+      margin-right: 5px;
+      & > span {
+        color: @text-color;
+        margin-right: 16px;
+      }
+    }
+  }
+  .Toolbar {
+    margin-right: 10px;
+    text-align: right;
+    line-height: 40px;
+    color: @text-color;
+  }
+  .u4-radio-wrapper {
+    margin: 0;
+  }
+}

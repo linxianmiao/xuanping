@@ -1,0 +1,17 @@
+@import '~@uyun/everest-styles/index';
+@import "~@uyun/components/lib/style/mixins/scrollbar";
+
+.data-permission{
+  height: 100%;
+  overflow: hidden;
+  .data-list{
+    .small-scrollbar;
+    height: ~'calc(100% - 47px)';
+    overflow-y: auto;
+  }
+}
+.data-permission-filter{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}

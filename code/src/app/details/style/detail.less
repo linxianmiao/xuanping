@@ -1,0 +1,56 @@
+@import '~@uyun/everest-styles/index';
+
+
+  .detail-wrap{
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    bottom: 0;
+    .detail-left{
+      width: 100%;
+      padding-right: 360px;   
+      border-right: 1px solid #ccc;
+      height: 100%;
+      .detail-left-head{
+        padding: 12px 12px 12px 26px;
+        .detail-left-head-left{
+          float: left;
+          button{
+            margin-right: 10px;
+          }
+        }
+        .detail-left-head-right{
+          float: right;
+          div{
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            i{
+              color: #9f9f9f;
+            }
+          }
+        }
+      }
+    }
+    .detail-right{
+      width: 360px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-left: 1px solid #ccc;
+    }
+  }
+
+  .retry-job-modal {
+    .uyunicon.uyunicon-close-circle {
+      color: @error-color;
+    }
+    .full{
+      .uyunicon{
+        color: @text-color;
+      }
+    }
+  }

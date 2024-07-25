@@ -1,0 +1,128 @@
+@import '~@uyun/everest-styles/index';
+
+#printArea {
+  .u4-table-thead > tr {
+    background: #ccc;
+  }
+}
+.clearfix {
+  zoom: 1;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+body {
+  overflow: hidden;
+  .u4-layout-content {
+    .u4-select {
+      width: 100%;
+    }
+    .u4-pagination {
+      float: right;
+    }
+    .u4-pagination .u4-select {
+      width: auto;
+    }
+    .u4-layout {
+      overflow-y: auto;
+    }
+    .u4-select-tree-dropdown {
+      height: 300px;
+    }
+  }
+  #itsm-wrap {
+    height: 100%;
+    overflow: auto;
+  }
+}
+.shenglue {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pre-wrap {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+.content-layout {
+  .ReactVirtualized__List {
+    overflow-y: auto !important;
+  }
+}
+
+html:not(.blue) {
+  body {
+    background: @page-bg !important;
+    .u4-affix .u4-breadcrumb {
+      background: transparent;
+    }
+  }
+  body.transparent {
+    background: transparent !important;
+  }
+
+  .content-layout,
+  .create-ticket-wrap,
+  #ticket-forms-wrap,
+  .form-layout-wrap {
+    border-radius: 2px;
+    background: @white;
+    .div-arrow {
+      background-color: @white;
+    }
+    .wait-item:not(:first-child) .div-arrow {
+      background-color: transparent;
+    }
+    .disabledStep {
+      .wait-item:first-child .div-arrow {
+        background-color: transparent;
+      }
+    }
+  }
+  .content-layout {
+    padding-top: 0;
+    padding: 12px;
+    box-shadow: 0 2px 10px 0 @border-color;
+  }
+  .u4-drawer-body {
+    .content-layout {
+      box-shadow: none;
+    }
+  }
+  .create-submodel-forms-wrap .ticket-create-forms-head {
+    left: -32px;
+    right: -32px;
+    bottom: -12px;
+  }
+}
+
+.p8 {
+  padding: 8px;
+}
+.ml8 {
+  margin-left: 8px;
+}
+.ticket-guide-wrap {
+  .u4-modal {
+    width: 1000px !important;
+    .guide-ticket-btn {
+      margin: 20px auto 20px;
+    }
+    .guide-ticket-btn-close {
+      text-align: center;
+      margin: 20px auto 0;
+    }
+    .u4-modal-body {
+      max-height: 800px;
+    }
+  }
+}

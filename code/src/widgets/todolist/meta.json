@@ -1,0 +1,22 @@
+{
+  "name": "todolist",
+  "dependencies": [
+    "itsm"
+  ],
+  "category": [],
+  "lang": {
+    "zh_CN": {
+      "title": "我的待办",
+      "desc": "我的待办工单列表和工单详情"
+    },
+    "en_US": {
+      "title": "myTodo",
+      "desc": "myTodo"
+    }
+  },
+  "height": 500,
+  "width": 12,
+  "target": {
+    "widget": "./index.js"
+  }
+}

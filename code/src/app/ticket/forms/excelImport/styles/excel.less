@@ -1,0 +1,104 @@
+@import '~@uyun/everest-styles/index';
+
+@upload-icon-color: @primary-color;
+@table-error-color: @error-color;
+
+.ticket-forms-excel {
+  &-table {
+    &-actions {
+      margin-bottom: 8px;
+
+      > div > * {
+        margin-left: 8px;
+      }
+
+      .u4-upload {
+        display: inline;
+      }
+
+      .u4-upload-list {
+        display: none;
+      }
+    }
+
+    .u4-table-pagination {
+      margin: 0;
+    }
+
+    .u4-form-item {
+      margin-bottom: 0 !important;
+    }
+
+    a[disabled] {
+      color: @disabled-color;
+    }
+
+    .u4-input {
+      &,
+      &:hover,
+      &:focus {
+        border-color: @border-color !important;
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(31, 153, 229, 0.2) !important;
+      }
+    }
+
+    .u4-select-selection {
+      background-color: @component-background !important;
+      border: 1px solid @border-color !important;
+    }
+
+    .u4-select-focused .u4-select-selection {
+      box-shadow: 0 0 0 2px rgba(31, 153, 229, 0.2) !important;
+    }
+
+    .u4-select-arrow {
+      color: @hits-color !important;
+    }
+
+    & &-error {
+      color: @error-color;
+
+      .u4-input {
+        &,
+        &:hover,
+        &:focus {
+          border-color: @table-error-color !important;
+        }
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 0 0 2px rgba(255, 72, 72, 0.2) !important;
+        }
+      }
+
+      .u4-select-selection {
+        border: 1px solid @table-error-color !important;
+      }
+
+      .u4-select-focused .u4-select-selection {
+        box-shadow: 0 0 0 2px rgba(255, 72, 72, 0.2) !important;
+      }
+
+      .u4-select-arrow {
+        color: @table-error-color !important;
+      }
+    }
+
+    &-required-column {
+      position: relative;
+      &:before {
+        display: inline-block;
+        margin-right: 4px;
+        content: '*';
+        font-family: SimSun;
+        line-height: 1;
+        font-size: 12px;
+        color: @table-error-color;
+      }
+    }
+  }
+}

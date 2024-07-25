@@ -1,0 +1,33 @@
+@import '~@uyun/everest-styles/index';
+
+.tache-list {
+  max-width: 400px;
+  background: @light-bg;
+  padding: 10px;
+  .lazy-model-wrap {
+    padding-top: 15px;
+    height: 300px;
+    overflow-y: auto;
+    :global {
+      div,
+      li {
+        position: relative;
+        display: block;
+        padding: 5px 12px;
+        line-height: 22px;
+        color: @text-color;
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover {
+          background-color: @active-color;
+          color: @heading-color;
+        }
+        &.active {
+          background-color: @disabled-bg;
+          color: @heading-color;
+        }
+      }
+    }
+  }
+}

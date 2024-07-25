@@ -1,0 +1,89 @@
+@import '~@uyun/everest-styles/index';
+
+.detail-list-wrap {
+  background: @component-background;
+  padding: 10px 5px;
+  border: 1px solid @divider-color;
+  .detail-looks-sheet-content {
+    .u4-tag {
+      margin-top: 3px;
+    }
+  }
+  .detail-looks-sheet {
+    .u4-col-6 {
+      line-height: 30px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .detail-looks-sheet-label {
+      float: left;
+      width: 80px;
+      text-align: right;
+      color: @text-color;
+    }
+  }
+}
+.oldMode {
+  .group-tag {
+    position: relative;
+    top: 0px;
+    line-height: 22px;
+    height: 22px;
+  }
+  .uyunicon-team {
+    line-height: 23px;
+  }
+}
+
+.collapseContent {
+  max-width: 370px !important;
+  max-height: 600px;
+  overflow: auto;
+  .u4-tooltip-inner {
+    padding: 0;
+    background: @header-bg;
+  }
+  .u4-collapse-content > .u4-collapse-content-box {
+    padding: 0;
+  }
+  .u4-collapse > .u4-collapse-item > .u4-collapse-header {
+    padding: 6px 12px;
+  }
+}
+.userNameClass {
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+}
+.userNameContent {
+  width: 1px;
+  vertical-align: -2px;
+  height: 12px;
+  display: inline-block;
+  background: #fff;
+  margin: 0 4px;
+}
+.iClass {
+  vertical-align: -2px;
+  margin-right: 8px;
+}
+
+.overdue-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  height: 15px;
+
+  &.overdue-icon-sla {
+    width: 30px;
+    border-radius: 10px;
+  }
+  &.overdue-icon-ola {
+    width: 15px;
+    border-radius: 50%;
+  }
+}
+.overdue-message {
+  vertical-align: middle;
+}

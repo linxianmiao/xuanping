@@ -1,0 +1,160 @@
+@import '~@uyun/everest-styles/index';
+
+.u4-dropdown.cs-overlay {
+  z-index: 1009;
+}
+
+.cs-dropdown {
+  position: relative;
+  background-color: @component-background;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+
+  // & > .u4-spin {
+  //   display: block;
+  //   padding: 10px 0;
+  // }
+
+  .cs-dropdown-option-list {
+    min-height: 32px;
+    max-height: 300px;
+    overflow-y: auto;
+
+    .cs-dropdown-loading-more {
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .cs-option {
+      position: relative;
+      padding: 5px 12px;
+      line-height: 22px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: @hits-color;
+
+        .cs-option-edit-entry,
+        .cs-option-delete-entry {
+          // display: inline;
+          visibility: visible;
+        }
+      }
+
+      .cs-option-edit-entry,
+      .cs-option-delete-entry {
+        // display: none;
+        visibility: hidden;
+      }
+
+      .cs-option-edit-entry,
+      .cs-option-delete-span {
+        position: absolute;
+        top: 6px;
+      }
+
+      .cs-option-edit-entry {
+        right: 24px;
+      }
+
+      .cs-option-delete-span {
+        width: 12px;
+        height: 22px;
+        right: 8px;
+      }
+    }
+
+    .cs-option.cs-option-selected {
+      background-color: @disabled-bg;
+
+      &:hover {
+        background-color: @disabled-bg;
+      }
+    }
+  }
+
+  .cs-option-edit {
+    padding: 10px;
+
+    & > .cs-option-edit-input-wrap {
+      display: inline-block;
+      width: calc(100% - 80px);
+    }
+    & > .cs-option-add-input-wrap {
+      .u4-input-affix-wrapper {
+        width: calc(50% - 5px);
+      }
+      .u4-input:last-child {
+        width: calc(50% - 5px);
+        margin-left: 10px;
+      }
+    }
+    & > .u4-btn {
+      margin-left: 10px;
+
+      .uyunicon-check {
+        color: @success-color;
+      }
+      .uyunicon-close {
+        color: @error-color;
+      }
+    }
+  }
+
+  .cs-option-add {
+    padding: 8px;
+    text-align: center;
+    color: @hits-color;
+    cursor: pointer;
+
+    .uyunicon-plus {
+      margin-right: 5px;
+    }
+  }
+}
+
+.cs-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  border: 1px solid @border-color;
+  border-radius: 2px;
+  background-color: @light-bg;
+  line-height: 1.5;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    border-color: @active-color;
+
+    .cs-box-clear {
+      display: block;
+    }
+  }
+
+  & > .cs-box-value,
+  & > .cs-box-placeholder {
+    line-height: 30px;
+    margin: 0 11px;
+  }
+
+  & > .cs-box-placeholder {
+    color: @hits-color;
+  }
+
+  & > .cs-box-clear {
+    display: none;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    color: @text-color;
+    cursor: pointer;
+
+    &:hover {
+      color: @active-color;
+    }
+  }
+}

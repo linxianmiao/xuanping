@@ -1,0 +1,78 @@
+@import '~@uyun/everest-styles/index';
+
+@col-bg: @component-background;
+@col-color: @text-color;
+@bd-color: @divider-color;
+@col-span-color: @text-color-secondary;
+@col-span-special-color: #fff;
+@col-num-color: @text-color;
+
+.overview-person-header {
+  .overview-person-header-col {
+    height: 88px;
+    background: @col-bg;
+    color: @col-color;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i.pandect-icon {
+      font-size: 20px;
+      margin-right: 12px;
+    }
+    .header-right {
+      line-height: 30px;
+      span {
+        display: inline-block;
+        color: @col-span-color;
+      }
+      .large-num {
+        font-size: 20px;
+        color: @col-num-color;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+    &.special {
+      .header-right {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: @col-span-special-color;
+        }
+      }
+      i.pandect-icon {
+        font-size: 34px;
+        margin-right: 30px;
+        color: @col-span-special-color;
+      }
+      .large-num {
+        font-size: 26px;
+      }
+    }
+    .icon-daichuli {
+      color: #4abafd;
+    }
+    .icon-chulizhong {
+      color: #30d85c;
+    }
+    .icon-yiguaqi {
+      color: #ec4e53;
+    }
+  }
+  .overview-person-header-col + .overview-person-header-col {
+    border-left: 1px solid @bd-color;
+  }
+  .overview-person-header-col:nth-child(1):after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    right: -20px;
+    top: 28px;
+    border: 10px solid transparent;
+    border-top-width: 14px;
+    border-bottom-width: 14px;
+    border-left-color: #ec4e53;
+    z-index: 9;
+  }
+}

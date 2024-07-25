@@ -1,0 +1,42 @@
+[
+  ["key", "zh_CN", "en_US"],
+  ["note", "请输入您的注释！", "Please enter your comments!"],
+  ["field-name", "字段名称", "The field names"],
+  ["field-name-placeholder", "请输入字段名称", "Please enter the field name"],
+  ["field-code", "字段编码", "Field coding"],
+  ["field-code-placeholder", "请输入字段编码", "Please input field coding"],
+  ["field-code-err1", "字段编码只能是英文", "Field coding can only in English"],
+  ["field-layout", "字段分组", "Field group"],
+  ["field-layout-placeholder", "请选择字段分组", "Please select a field group"],
+  ["please.select.group", "请选择分组", "Please select group"],
+  ["privacy", "隐私", "privacy"],
+  ["privacy-label", "仅工单经办人员可见", "Visible only order the person in charge"],
+  ["field-desc", "字段说明", "Fields that"],
+  [
+    "err1027",
+    "保存字段失败，请稍后重试",
+    "Failed to save the field data,please try again later"
+  ],
+  [
+    "err1028",
+    "更新字段失败，请稍后重试",
+    "Failed to modify the field,please try again later"
+  ],
+  ["message-ajax-local-exception", "返回数据解析错误", "Return data parsing error"],
+  ["message-ajax-server-unfound", "服务器资源未找到", "Server resource not found"],
+  ["message-ajax-server-error", "服务端异常", "The service side abnormal"],
+  ["message-ajax-authority", "无权限", "No authority"],
+  ["can.not.found", "无法找到", "Can not found"],
+  ["request-err", "请求错误", "Request error"],
+  ["common.field.name", "名称", "Name"],
+  ["common.version.number", "版本号", "Version"],
+  ["common.placeholder.key", "请输入关键字", "Please enter keywords"],
+  ["button.delete", "删除", "Delete"],
+  ["action", "操作", "Action"],
+  ["script", "脚本", "Script"],
+  ["script.field.name", "脚本名称", "Name"],
+  ["script.field.classify", "脚本分类", "Classify"],
+  ["script.select", "选择脚本", "Select Script"],
+  ["script.distribute.path", "下发路径", "Path"],
+  ["script.distribute.path.placehoder", "请输入下发路径", "Please enter path"]
+]

@@ -1,0 +1,76 @@
+@import '~@uyun/everest-styles/index';
+
+.config-model-basic-upload-wrap {
+  .config-model-basic-upload-built-icon {
+    display: inline-block;
+    vertical-align: top;
+    & > div {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 2px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 10px;
+      &.active {
+        background: @link-color;
+        i.iconfont {
+          color: @white;
+        }
+      }
+    }
+    i.iconfont {
+      font-size: 28px;
+      color: @text-color;
+    }
+  }
+  .u4-upload.u4-upload-select-picture-card {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 1px dashed @border-color;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    i.uyicon.uyicon-plus {
+      font-size: 30px;
+      color: @border-color;
+      line-height: 48px;
+    }
+    & > .u4-upload {
+      padding: 0;
+    }
+  }
+  .config-model-basic-upload-define-icon {
+    display: inline-block;
+    vertical-align: top;
+    .config-model-basic-upload-define-icon-img-wrap {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 2px;
+      overflow: hidden;
+      box-sizing: border-box;
+      &.active {
+        border: 2px solid @border-color;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .delete-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -6px;
+        margin-top: -6px;
+        cursor: pointer;
+      }
+    }
+  }
+}

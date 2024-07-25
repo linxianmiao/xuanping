@@ -1,0 +1,77 @@
+@import '~@uyun/everest-styles/index';
+
+.attr-field-panel-content {
+  display: flex;
+  height: 100%;
+  border: 1px solid @divider-color;
+  .left {
+    flex: 0 0 160px;
+    width: 160px;
+    border-right: 1px solid @divider-color;
+  }
+  .rigth {
+    width: 100%;
+  }
+}
+
+.selected-content {
+  height: 100%;
+  .title {
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    border-bottom: 1px solid @divider-color;
+    padding: 0 5px;
+    .num {
+      float: left;
+    }
+    .des {
+      float: right;
+      color: @hits-color;
+    }
+  }
+  .sortable {
+    padding: 5px;
+    overflow: auto;
+    height: calc(~'100% - 41px');
+    :global {
+      .u4-tag {
+        display: block;
+        position: relative;
+        margin: 0 0 3px;
+        cursor: move;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        .uyunicon-close {
+          position: absolute;
+          right: 5px;
+          top: 4px;
+        }
+      }
+    }
+  }
+  &.notSortable {
+    :global {
+      .u4-tag {
+        cursor: default;
+      }
+    }
+  }
+}
+
+.tab-content {
+  :global {
+    .u4-tabs-tabpane {
+      padding-left: 12px;
+    }
+  }
+  .check-label {
+    max-width: 110px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+}

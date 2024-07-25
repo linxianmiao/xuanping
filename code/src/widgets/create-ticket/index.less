@@ -1,0 +1,80 @@
+.npm-create-ticket {
+  min-height: inherit;
+  &-content {
+    min-height: inherit;
+    .npm-create-ticket-model-list {
+      position: relative;
+      .u4-list-item {
+        margin-bottom: 20px;
+      }
+      .list-card {
+        display: flex;
+        cursor: pointer;
+        background: @page-bg;
+        height: 120px;
+        border-radius: 4px;
+        padding: 24px 18px;
+        .list-card-avatar {
+          position: relative;
+          margin: 0 16px 0 6px;
+          background: @white;
+          width: 72px;
+          height: 72px;
+          border-radius: 12px;
+          .list-card-avatar-icon {
+            position: absolute;
+            left: 5.38px;
+            top: 9.63px;
+            width: 78.13%;
+            height: 71.86%;
+            opacity: 1;
+            .uyunicon,
+            .iconfont {
+              position: relative;
+              font-size: 36px;
+              text-align: center;
+              left: 9px;
+              color: @primary-color;
+            }
+            .uyunicon {
+              top: 5px;
+            }
+          }
+        }
+        .list-card-content {
+          width: calc(100% - 94px);
+          .list-card-title {
+            display: block;
+            margin-bottom: 8px;
+            color: @text-color;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 24px;
+            letter-spacing: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .list-card-description {
+            display: block;
+            color: @text-color-secondary;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 20px;
+            letter-spacing: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ka-wrapper,
+.ka-content {
+  min-height: inherit;
+}

@@ -1,0 +1,93 @@
+@import '~@uyun/everest-styles/index';
+
+.create-submodel-forms-wrap {
+  height: 100%;
+  position: relative;
+  #create-submodel-forms {
+    line-height: 18px;
+    padding-bottom: 40px;
+    height: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    #ticket-forms-wrap {
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+  .ticket-create-forms-head {
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    // background: @header-bg;
+    z-index: 1;
+    .u4-form-item {
+      margin-bottom: 0;
+    }
+    .u4-form-item.operate {
+      line-height: 50px;
+      margin-bottom: 0;
+      button {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.ticket-detail-wrap {
+  #ticket-forms-wrap {
+    .u4-collapse {
+      .u4-collapse-header {
+        background-color: transparent;
+      }
+    }
+  }
+}
+.create-ticket-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  bottom: 0;
+  #ticket-forms-wrap {
+    .u4-collapse {
+      .u4-collapse-header {
+        background-color: transparent;
+      }
+    }
+  }
+  .create-submodel-forms-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 50px;
+    height: auto;
+  }
+  .create-submodel-forms-wrap.create-step-wrap {
+    top: 58px;
+  }
+  &.createTicketAlert {
+    top: 10px;
+    bottom: 43px;
+    .create-submodel-forms-wrap {
+      top: 50px;
+    }
+  }
+  &.create-asset {
+    top: 0;
+    bottom: 0;
+    .create-submodel-forms-wrap {
+      top: 50px;
+    }
+  }
+  .u4-spin-nested-loading,
+  .u4-spin-container {
+    width: 100%;
+    height: 100%;
+  }
+}

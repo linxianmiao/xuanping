@@ -1,0 +1,68 @@
+@import '~@uyun/everest-styles/index';
+
+.dictionary-content {
+  background-color: @component-background;
+  position: relative;
+  .u4-menu-list {
+    width: 100%;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // width: 200px;
+  }
+  .table-list {
+    // padding-left: 210px;
+    height: 100%;
+    .header {
+      height: 32px;
+      margin-bottom: 12px;
+      .u4-btn {
+        float: right;
+      }
+      .u4-btn-primary {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .dictionary-content-right {
+    border: 1px solid @divider-color;
+    border-left: 0;
+    header {
+      padding: 0 10px 0 18px;
+      height: 42px;
+      border-bottom: 1px solid @divider-color;
+      background-color: @header-bg;
+      line-height: 42px;
+    }
+    & > div {
+      padding: 10px;
+      height: calc(100% - 42px);
+      overflow-y: auto;
+    }
+  }
+}
+.dynamic-delete-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  font-size: 20px;
+  color: #9098a4;
+  transition: all 0.3s;
+}
+.dynamic-delete-button:hover {
+  color: #666e79;
+}
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.blue .dynamic-delete-button {
+  color: #4b98ca;
+}
+.blue .dynamic-delete-button:hover {
+  color: #81c6f1;
+}

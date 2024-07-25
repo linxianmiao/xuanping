@@ -1,0 +1,76 @@
+@import '~@uyun/everest-styles/index';
+
+.temp-create-span {
+  display: inline-block;
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid @border-color;
+  border-radius: 1px;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  &:hover {
+    color: @link-color;
+  }
+}
+
+.ticket-temp-list {
+  display: inline-block;
+  float: right;
+  width: 200px;
+  .u4-select {
+    width: 100%;
+  }
+}
+.ticket-temp-list-option {
+  position: relative;
+  padding-right: 30px;
+
+  .name {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .icons {
+    position: absolute;
+    right: 0;
+  }
+
+  .icons i {
+    opacity: 0;
+    cursor: pointer;
+    color: @text-color;
+    transition: opacity 0.3s;
+    &:first-child {
+      margin-right: 5px;
+    }
+  }
+  .icons.disabled i {
+    cursor: no-drop;
+    color: @disabled-color;
+  }
+  &:hover .icons i {
+    opacity: 1;
+  }
+}
+
+.ticket-template-share-tip {
+  margin-left: 5px;
+  color: @text-color;
+}
+.ticket-template-modal-style {
+  width: 100%;
+  height: 54px;
+  background: @component-background;
+  border: 1px solid @border-color;
+  padding: 10px 32px;
+  margin-bottom: 15px;
+  .ticket-temp-list {
+    float: left;
+    width: 50%;
+  }
+}

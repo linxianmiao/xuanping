@@ -1,0 +1,26 @@
+.wrapper {
+  position: relative;
+  padding: 0 14px;
+  display: inline-block;
+  max-width: 100%;
+
+  & > span {
+    position: absolute;
+    top: 9px;
+
+    &:first-child {
+      left: 0;
+    }
+    &:last-child {
+      right: 0;
+    }
+  }
+
+  & > p {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+  }
+}

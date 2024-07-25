@@ -1,0 +1,56 @@
+.no-border-collapse {
+  .u4-collapse-item {
+    // border-color: transparent;
+    .u4-collapse-header {
+      background-color: transparent;
+    }
+  }
+  .u4-collapse-content {
+    border-top-color: transparent;
+    .u4-table-wrapper {
+      border-color: transparent;
+    }
+  }
+  .u4-title {
+    display: inline;
+  }
+}
+.froms-group-wrap {
+  .u4-table.u4-table-small .u4-table-title,
+  .u4-table.u4-table-small .u4-table-footer,
+  .u4-table.u4-table-small .u4-table-thead > tr > th,
+  .u4-table.u4-table-small .u4-table-tbody > tr > td,
+  .u4-table.u4-table-small tfoot > tr > th,
+  .u4-table.u4-table-small tfoot > tr > td {
+    padding: 8px 8px;
+  }
+  .u4-collapse > .u4-collapse-item {
+    border-color: transparent;
+  }
+  .u4-collapse-item:last-child > .u4-collapse-content {
+    border: 1px solid @divider-color;
+    border-top: none;
+  }
+  .u4-collapse > .u4-collapse-item.u4-collapse-no-arrow > .u4-collapse-header {
+    padding-left: 0px;
+  }
+}
+.froms-panel-wrap {
+  border: 1px solid @divider-color;
+  padding-top: 16px;
+  .u4-table.u4-table-small .u4-table-title,
+  .u4-table.u4-table-small .u4-table-footer,
+  .u4-table.u4-table-small .u4-table-thead > tr > th,
+  .u4-table.u4-table-small .u4-table-tbody > tr > td,
+  .u4-table.u4-table-small tfoot > tr > th,
+  .u4-table.u4-table-small tfoot > tr > td {
+    padding: 3px 8px;
+  }
+  .u4-form-item {
+    margin-bottom: 0;
+  }
+  &.no-border {
+    border-color: transparent;
+    padding-top: 0;
+  }
+}

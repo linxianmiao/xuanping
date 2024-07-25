@@ -1,0 +1,120 @@
+@import '~@uyun/everest-styles/index';
+
+.btn-checked {
+  color: #fff !important;
+  background-color: @primary-color!important;
+}
+
+.color-view {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  border-radius: 2px;
+  cursor: pointer;
+
+  .mask {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: @disabled-bg;
+    cursor: not-allowed;
+  }
+
+  :global {
+    .iconfont {
+      font-size: 22px;
+      color: @text-color;
+    }
+  }
+}
+
+.color-item {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: middle;
+  border-radius: 2px;
+  cursor: pointer;
+
+  .color-item-check {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #3cd768;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 10px;
+    :global {
+      .uyunicon-check {
+        font-size: 8px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.popover {
+  :global {
+    .u4-popover-arrow,
+    .u4-popover-inner {
+      background-color: rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+.radio-span {
+  display: inline-block;
+  height: 32px;
+  padding: 0 8px;
+  line-height: 32px;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+// 设置Select框背景颜色
+.selectionBg(@bgcolor) {
+  .u4-select-selection,
+  .u4-select-selection__clear {
+    background-color: @bgcolor;
+  }
+}
+
+:global {
+  .select-with-color {
+    .u4-select-selection {
+      color: #fff;
+      .u4-select-selection__clear,
+      .u4-select-arrow {
+        color: #fff;
+      }
+    }
+    &.bg267BFF {
+      .selectionBg(#267bff);
+    }
+    &.bg3CB3FD {
+      .selectionBg(#3cb3fd);
+    }
+    &.bg2EDDBD {
+      .selectionBg(#2eddbd);
+    }
+    &.bg3CD768 {
+      .selectionBg(#3cd768);
+    }
+    &.bgFFCD3D {
+      .selectionBg(#FFCD3D);
+    }
+    &.bgFF8C3D {
+      .selectionBg(#FF8C3D);
+    }
+    &.bgFF4848 {
+      .selectionBg(#FF4848);
+    }
+  }
+}

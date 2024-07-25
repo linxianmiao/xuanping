@@ -1,0 +1,54 @@
+@import '~@uyun/everest-styles/index';
+@import '~@uyun/components/lib/style/mixins/scrollbar';
+
+.add-icon {
+  cursor: pointer;
+  &:hover {
+    color: @link-color;
+  }
+}
+
+.left-content-wrap {
+  height: 100%;
+  background-color: @component-background;
+
+  .search-wrapper {
+    padding: 14px 10px 0 10px;
+  }
+
+  :global {
+    .u4-menu-list {
+      width: 100%;
+    }
+
+    .u4-menu {
+      background-color: @component-background;
+
+      .u4-menu-item:hover,
+      .u4-menu-item-selected {
+        background-color: @page-bg;
+      }
+    }
+
+    .u4-spin {
+      width: 100%;
+    }
+  }
+}
+
+.modal {
+  :global {
+    .u4-modal-body {
+      .u4-form {
+        padding: 0 30px;
+      }
+    }
+  }
+}
+
+.part {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 16px 16px 2px 16px;
+  background-color: @component-background;
+}

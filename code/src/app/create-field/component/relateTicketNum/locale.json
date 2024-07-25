@@ -1,0 +1,30 @@
+[
+  ["key", "zh_CN", "en_US"],
+  ["note", "请输入您的注释！", null],
+  ["field-name", "字段名称", null],
+  ["field-name-placeholder", "请输入字段名称", null],
+  ["field-code", "字段编码", null],
+  ["field-code-placeholder", "请输入字段编码", null],
+  ["field-code-err1", "字段编码只能是英文" , null],
+  ["field-layout", "字段分组", null],
+  ["field-layout-placeholder", "请选择字段分组", null],
+  ["privacy" , "隐私" , null],
+  ["privacy-label", "仅工单经办人员可见" , null],
+  ["field-desc" , "字段说明" , null],
+  [
+    "err1027",
+    "保存字段失败，请稍后重试",
+    "Failed to save the field data,please try again later"
+  ],
+  [
+    "err1028",
+    "更新字段失败，请稍后重试",
+    "Failed to modify the field,please try again later"
+  ],
+  ["message-ajax-local-exception", "返回数据解析错误", "Return data parsing error"],
+  ["message-ajax-server-unfound", "服务器资源未找到", "Server resource not found"],
+  ["message-ajax-server-error", "服务端异常", "The service side abnormal"],
+  ["message-ajax-authority", "无权限", "No authority"],
+  ["request-err", "请求错误", "Request error"],
+  ["relate-ticket","关联工单","Relate Ticket"]
+]

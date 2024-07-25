@@ -1,0 +1,89 @@
+@import '~@uyun/everest-styles/index';
+
+.everest-toolbar .toolbar-alignment:after {
+  display: none;
+}
+.everest-toolbar {
+  .toolbar-alignment .toolbar-alignment-button {
+    margin-top: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @text-color-secondary;
+  }
+
+  .toolbar-scale .everest-scale-select {
+    margin-right: 8px;
+    .u4-select-selection--single {
+      width: 100%;
+    }
+  }
+}
+.everest-shape-panel {
+  padding-top: 40px !important;
+  margin-top: -40px;
+  background: none !important;
+
+  .group-panel-cell {
+    .group-panel-sub-item {
+      .group-panel-sub-icon {
+        i.iconfont {
+          color: @text-color-secondary;
+        }
+        .group-panel-svg {
+          .group-panel {
+            fill: @active-color;
+          }
+        }
+      }
+      .group-panel-sub-title {
+        color: @text-color-secondary;
+      }
+    }
+  }
+}
+
+.model .model-tabs {
+  .flow-chart .everest-toolbar {
+    z-index: 10;
+  }
+  .flow-chart {
+    border: none;
+    .u4-select-selection-selected-value {
+      padding-right: 0;
+    }
+  }
+  .everest-statge-layout {
+    position: absolute;
+    left: 72px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-top: 40px;
+    margin-top: 0;
+    z-index: 1;
+  }
+  .side-node-modal {
+    z-index: 100;
+  }
+  .side-node-modal-tips {
+    z-index: 100;
+  }
+  .toolbar-scale {
+    cursor: pointer;
+  }
+  .full-screen i {
+    cursor: pointer;
+  }
+}
+
+.flow-delete-icon {
+  float: left;
+  padding: 0 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 40px;
+  color: @text-color-secondary;
+}

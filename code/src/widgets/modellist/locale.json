@@ -1,0 +1,10 @@
+[
+  ["key", "zh_CN", "en_US"],
+  ["note", "请输入您的注释！", "Please input your note!"],
+  ["itsm-modellist", "itsm-modellist {title}", "itsm-modellist"],
+  ["all", "全部", "All"],
+  ["my.collection", "我的收藏", "My Collection"],
+  ["collect.success", "收藏成功", "Collect Successfully"],
+  ["collect.cancel.success", "取消收藏", "Cancel Collection"],
+  ["create.success", "创建成功", "Create Successfully"]
+]

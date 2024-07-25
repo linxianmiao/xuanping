@@ -1,0 +1,17 @@
+{
+  "name": "itsm/modellist",
+  "path": "/itsm",
+  "dependencies": ["itsm"],
+  "category": [],
+  "lang": {
+    "zh_CN": {
+      "title": "工单模型",
+      "desc": "工单模型"
+    },
+    "en_US": {
+      "title": "modelList",
+      "desc": "modelList"
+    }
+  },
+  "height": 250
+}

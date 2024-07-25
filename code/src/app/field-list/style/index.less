@@ -1,0 +1,144 @@
+@import '~@uyun/everest-styles/index';
+
+.warning-tips {
+  .u4-modal-content {
+    background: @page-bg;
+  }
+  .u4-modal-body {
+    text-align: center;
+  }
+}
+.delete-waring {
+  height: 136px;
+  display: flex;
+  i {
+    color: #fca744;
+    font-size: 44px;
+    margin-right: 12px;
+    align-items: center;
+    display: flex;
+    margin-left: 50px;
+  }
+  div {
+    padding-top: 12.5%;
+  }
+  .p1 {
+    text-align: left;
+    font-size: 16px;
+    color: @text-color-secondary;
+  }
+  .p2 {
+    font-size: 14px;
+    color: @text-color;
+    text-align: left;
+    line-height: 20px;
+  }
+}
+.create-group-modal {
+  .u4-modal-body {
+    background: @page-bg;
+    padding: 35px 16px;
+    .u4-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+.field-list-wrap {
+  .u4-tabs-content {
+    background-color: @page-bg;
+  }
+  .u4-tabs-nav-container {
+    padding: 0;
+  }
+  .u4-table {
+    border-left: 0;
+    border-right: 0;
+  }
+  .u4-table-row-indent {
+    padding-left: 0 !important;
+  }
+  .u4-table-tbody > tr > td:first-child {
+    padding: 10px;
+  }
+  .u4-tabs-bar {
+    border-bottom-color: @border-color;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 0;
+  }
+  .field-group-operation {
+    color: @link-color;
+  }
+}
+.field-list-filter {
+  padding: 16px 0;
+  background: @page-bg;
+  .u4-input-affix-wrapper {
+    float: left;
+  }
+  .u4-select {
+    float: left;
+    margin-left: 15px;
+    width: 200px;
+  }
+  .operation-btns {
+    float: right;
+    > .u4-btn {
+      margin-left: 10px;
+    }
+  }
+}
+.field-list-content .u4-tabs {
+  padding-bottom: 20px;
+  .u4-tabs {
+    color: @text-color;
+  }
+  .u4-tabs-nav {
+    .u4-tabs-tab {
+      border: 1px solid @border-color;
+      background: @page-bg;
+      height: 32px;
+      padding: 0 20px;
+      line-height: 30px;
+      border-radius: 2px 2px 0 0;
+      margin-right: 3px;
+      position: relative;
+      z-index: 11;
+    }
+    .u4-tabs-tab-active {
+      color: @text-color;
+      background: @page-bg;
+      border-bottom: transparent;
+    }
+  }
+}
+.extend-field {
+  .field-group-operation {
+    margin-left: 28px;
+  }
+  .u4-table-tbody > tr.u4-table-row-level-0 > td {
+    padding: 10px;
+    background: @page-bg;
+  }
+}
+
+.filed-operation-popver {
+  .u4-popover-inner-content {
+    background: @page-bg;
+    padding: 0;
+  }
+  a {
+    display: block;
+    width: 120px;
+    line-height: 31px;
+    padding: 0 16px;
+    color: @text-color;
+  }
+  a:hover {
+    background: @page-bg;
+    color: @text-color;
+  }
+}
+.filed-operation-popver.u4-popover-placement-bottomLeft > .u4-popover-content > .u4-popover-arrow {
+  display: none;
+}

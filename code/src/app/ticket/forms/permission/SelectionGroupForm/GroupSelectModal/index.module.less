@@ -1,0 +1,40 @@
+@import '~@uyun/everest-styles/index';
+
+.modal {
+  :global {
+    .u4-modal-body {
+      height: 432px;
+    }
+  }
+}
+
+.app-item {
+  display: block;
+  line-height: 40px;
+
+  :global {
+    span {
+      cursor: pointer;
+      &:hover {
+        color: @link-color;
+      }
+    }
+  }
+}
+
+.selected-text {
+  margin-left: 20px;
+  color: @hits-color;
+  cursor: pointer;
+  &:hover {
+    color: @link-color;
+  }
+}
+
+.widgets {
+  padding-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}

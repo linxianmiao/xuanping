@@ -1,0 +1,285 @@
+@import '~@uyun/everest-styles/index';
+
+.ticket-froms-log-wrap {
+  .list_title {
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    background: @header-bg;
+    color: @heading-color;
+    border-bottom: 1px solid @divider-color;
+    display: flex;
+  }
+  .list_time {
+    flex: 1;
+    padding-left: 25px;
+    margin-right: 13px;
+  }
+  .list_content {
+    flex: 9;
+    padding-left: 6px;
+  }
+  .ticket-froms-log-header {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ticket-froms-log-sel {
+    width: 25%;
+  }
+
+  .ticket-froms-log-checkbox {
+    line-height: 32px;
+    margin-left: 10px;
+  }
+  .record-list {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    .u4-timeline-item:first-of-type {
+      .u4-timeline-item-head {
+        background: @link-color;
+      }
+    }
+    .u4-timeline-item-content {
+      top: -16px;
+    }
+    .record-wrap {
+      display: flex;
+      .record-time {
+        padding: 10px 0;
+        flex: 1;
+        align-items: center;
+      }
+      .record-content {
+        flex: 9;
+        background: @light-bg;
+        border: 1px solid @border-color;
+        // margin-left: 20px;
+        width: 100%;
+        padding: 10px 0 10px 16px;
+        .record-name {
+          display: inline-block;
+          color: @link-color;
+          word-break: break-all;
+          // align-self: flex-start;
+          // width: 12%;
+        }
+        .record-remark {
+          display: inline-block;
+          margin-left: 16px;
+          align-self: flex-start;
+          max-width: 90%;
+          .record-changeList {
+            .change {
+              width: 24px;
+              height: 24px;
+              padding: 2px 4px;
+              border: 1px solid @border-color;
+              i {
+                font-size: 12px;
+                color: @text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .row:not(:last-of-type) {
+      margin-bottom: 5px;
+      overflow: hidden;
+      color: @text-color;
+      .activityName {
+        float: left;
+        max-width: 150px;
+        font-size: 14px;
+      }
+      .exectorTime {
+        float: right;
+      }
+      .actionType {
+        color: @text-color;
+        word-break: break-all;
+      }
+    }
+    .approve-item {
+      .row:not(:last-of-type) {
+        margin-bottom: -5px;
+      }
+      .activityName {
+        color: @text-color;
+        margin-bottom: 10px;
+        font-size: 14px;
+        span {
+          margin-left: 5px;
+        }
+      }
+      .approve-list {
+        .approve-rst {
+          position: relative;
+          margin-bottom: 14px;
+          margin-top: 2px;
+          color: @text-color-secondary;
+          .approve-username {
+            display: inline-block;
+            margin-right: 60px;
+          }
+          .approve-state {
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            top: 0;
+            right: 0;
+            .iconfont {
+              position: relative;
+              top: 2px;
+              margin-right: 3px;
+            }
+            .icon-zhixingchenggong {
+              color: #2aa514;
+            }
+            .icon-zhixingzhong {
+              color: #e0610d;
+            }
+          }
+        }
+        .approve-suggestion {
+          padding: 5px 0 5px 0;
+        }
+      }
+    }
+  }
+}
+.u4-popover.popover_record {
+  min-width: 400px;
+  max-width: 600px;
+  .u4-popover-inner {
+    max-height: 500px;
+    overflow: auto;
+    .u4-popover-title {
+      border-bottom: 1px solid #025892;
+      height: 40px;
+      line-height: 40px;
+      .explain_item {
+        .explain_title {
+          .t_label {
+            float: left;
+            // color: #ffffff@t_label;
+            width: 70px;
+            text-align: center;
+          }
+          .t_con {
+            padding-left: 70px;
+            .span {
+              float: left;
+              max-width: 460px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              margin-bottom: 4px;
+            }
+            .col1 {
+              margin-right: 20px;
+              color: #ccc;
+              text-decoration: line-through;
+            }
+            .col2 {
+              background: #50e3c2;
+              padding: 0 5px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .u4-popover-inner-content {
+      padding-top: 20px;
+      .explain_item {
+        margin-bottom: 10px;
+        .explain_content {
+          position: relative;
+          overflow: hidden;
+          .t_label {
+            width: 70px;
+            text-align: right;
+            float: left;
+            word-wrap: break-word;
+          }
+          .t_con {
+            padding-left: 80px;
+            .span {
+              float: left;
+              max-width: 460px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              margin-bottom: 4px;
+            }
+            .col1 {
+              margin-right: 20px;
+              color: #ccc;
+              text-decoration: line-through;
+            }
+            .col2 {
+              background: #50e3c2;
+              padding: 0 5px;
+              color: #fff;
+            }
+            .table_explain {
+              .old_explain {
+                margin-right: 20px;
+                color: #ccc;
+                text-decoration: line-through;
+              }
+              .new_explain {
+                background: #50e3c2;
+                padding: 0 5px;
+                color: #fff;
+              }
+            }
+            .old-rich-text {
+              color: #ccc;
+            }
+            .new-rich-text {
+              color: #fff;
+              padding: 0 5px;
+              display: inline-block;
+              margin-top: 10px;
+              background: #50e3c2;
+            }
+            .form-rich-text {
+              cursor: pointer;
+              min-height: 100px;
+              color: @text-color;
+              p {
+                img {
+                  width: 200px;
+                  height: 200px;
+                }
+              }
+            }
+            .u4-table {
+              border: 1px solid #045892;
+              border-bottom: 1px solid transparent;
+              border-right: 1px solid transparent;
+              overflow: auto;
+              .u4-table-content {
+                .u4-table-thead tr th {
+                  padding-left: 20px;
+                  background: #045892;
+                  border-right: 1px solid #045892;
+                }
+                .u4-table-tbody tr {
+                  background: transparent;
+                  td {
+                    border-bottom: 1px solid #045892;
+                    border-right: 1px solid #045892;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

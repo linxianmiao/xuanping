@@ -1,0 +1,30 @@
+@import '~@uyun/everest-styles/index';
+
+.link-url{
+  display: flex;
+  button{
+      display: inline-block;
+      padding-left: 7px;
+      padding-right: 7px;
+      margin-left: 10px;
+      i{
+          color:@text-color;
+      }
+  }
+  button:hover i {
+      color:@active-color;
+  }
+}
+
+.link-url-dropdown-wrap{
+  .link-url-dropdown-list{
+      max-height: 300px;
+      overflow-y: auto;
+  }
+}
+
+
+
+.u4-select-tree .u4-select-tree-treenode-disabled .u4-select-tree-node-content-wrapper{
+    color:@text-color;
+}

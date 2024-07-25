@@ -1,0 +1,76 @@
+@import '~@uyun/everest-styles/index';
+
+.finish-submit .u4-form-item-control {
+  overflow: visible;
+}
+.finish-submit {
+  .u4-modal-body {
+    background: @component-background;
+  }
+}
+.multiple-triggers {
+  .opinion-icon {
+    line-height: 28px;
+    padding-top: 8px;
+    .icon-select {
+      display: inline-block;
+      line-height: 1;
+      border: 1px dashed #6ca4cd;
+      background: transparent;
+      color: #6ca4cd;
+      padding: 4px 7px;
+    }
+    .icon-select:hover {
+      background: #2783be;
+      color: #ffffff;
+    }
+    .icon-selected {
+      display: inline-block;
+      line-height: 1;
+      border: 1px dashed #6ca4cd;
+      background: #2783be;
+      color: #ffffff;
+      padding: 4px 7px;
+    }
+  }
+}
+.mention-input__input {
+  border: 1px solid @border-color;
+  border-radius: 2px;
+  color: @text-color;
+  padding: 0 5px;
+  line-height: 20px;
+  overflow-y: auto !important;
+  outline: none;
+}
+.mention-input__suggestions {
+  background-color: @page-bg !important;
+  max-height: 200px;
+  width: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .mention-input__suggestions__item--focused {
+    background-color: @page-bg;
+  }
+  .mention-input__suggestions__item {
+    padding: 5px 15px;
+  }
+}
+.user {
+  color: @text-color;
+}
+.mention-input--multiLine,
+.mention-input__control {
+  height: 50px;
+}
+
+.mention-high.mention-input--multiLine {
+  height: 100px;
+}
+
+.mention-input__suggestions .mention-input__suggestions__list {
+  max-height: 200px;
+  width: 150px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

@@ -1,0 +1,76 @@
+@import '~@uyun/everest-styles/index';
+
+.overview-person-table-wrap {
+  border: 1px solid @border-color;
+}
+
+.overview-person-table {
+  .u4-pagination {
+    margin: 0;
+  }
+  .u4-table-header {
+    background: transparent;
+    padding-bottom: 7px !important;
+    overflow-x: hidden;
+  }
+  .u4-table-tbody tr:nth-child(odd),
+  .u4-table tr:nth-child(odd) {
+    background: none !important;
+  }
+  .u4-table-tbody tr:nth-child(2n),
+  .u4-table tr:nth-child(2n) {
+    background: none !important;
+  }
+  .u4-table-thead > tr > th {
+    background: transparent !important;
+    border-bottom: 1px solid @border-color;
+    color: @text-color;
+    padding: 8px 16px;
+  }
+  .u4-table-tbody > tr > td {
+    padding: 8px 16px;
+    color: @text-color;
+    border-bottom-color: @border-color;
+    > a {
+      color: @link-color;
+    }
+    .person-table-item {
+      max-width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+    }
+  }
+  .u4-table-tbody > tr:hover > td {
+    background: transparent;
+  }
+  .u4-progress-line {
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+  }
+  .u4-progress-outer {
+    display: inline-block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .u4-progress-inner {
+    display: inline-block;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 100px;
+    vertical-align: middle;
+  }
+  .u4-progress-bg {
+    border-radius: 100px;
+    background-color: #2db7f5;
+    height: 8px;
+    transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+    position: relative;
+  }
+  .u4-pagination {
+    float: right;
+  }
+}

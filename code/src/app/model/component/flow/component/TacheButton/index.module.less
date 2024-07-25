@@ -1,0 +1,52 @@
+@import '~@uyun/everest-styles/index';
+
+.tache-button-collapse {
+  :global {
+    .u4-collapse-item,
+    .u4-collapse-content {
+      border: none !important;
+    }
+    .u4-collapse-content-box {
+      padding: 0;
+    }
+  }
+  .card-content {
+    .head {
+      padding: 0 10px;
+      height: 36px;
+      line-height: 36px;
+      margin-bottom: 9px;
+      background: @header-bg;
+      color: @heading-color;
+      .row-head {
+        padding: 0 8px;
+        .col-left {
+          padding-left: 22px;
+        }
+        .col-right {
+          text-align: right;
+        }
+      }
+    }
+    .body {
+      border: 1px solid @divider-color;
+      padding: 10px 10px 0;
+      .row-record {
+        padding: 0 8px;
+        height: 33px;
+        line-height: 33px;
+        border: 1px solid @divider-color;
+        margin-bottom: 12px;
+        &:hover {
+          cursor: move;
+        }
+        .col-right {
+          text-align: right;
+        }
+        .alias-name {
+          color: @text-color-secondary;
+        }
+      }
+    }
+  }
+}

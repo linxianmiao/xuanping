@@ -1,0 +1,194 @@
+@import '~@uyun/everest-styles/index';
+
+.filter-process-list-wrap {
+  padding: 15px;
+  max-height: 300px;
+  overflow: auto;
+  div.process-item {
+    padding: 7px 11px;
+    display: inline-block;
+    background: @page-bg;
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    color: @text-color;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    &.active {
+      color: @text-color;
+      border: 1px solid @border-color;
+    }
+  }
+}
+.ticket-froms-create-relevance-model {
+  .ticket-create-forms-head {
+    left: 0 !important;
+    right: 0 !important;
+    border-top: 1px solid @border-color;
+    // z-index: 99999;
+    z-index: 1;
+  }
+}
+.ticket-froms-relevance-model {
+  .process-list-wrap {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 32px;
+    line-height: 24px;
+    margin-left: 10px;
+    background: @page-bg;
+    border: 1px solid @border-color;
+    border-radius: 2px;
+    padding: 4px 7px;
+    color: @text-color;
+    .rotate_180:before {
+      transform: rotate(180deg);
+    }
+    .rotate_0:before {
+      transform: rotate(0deg);
+    }
+  }
+}
+.ticket-froms-relevance {
+  width: 100%;
+  .ticket-froms-relevance-btn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .customized-columns {
+    margin: 5px 0 12px 0;
+  }
+  .table-jsontext {
+    display: inline-block;
+    width: 132px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .customized-columns-time {
+    .u4-calendar-picker-input {
+      border: none;
+      padding: 0;
+      background-color: @component-background;
+      color: @table-color;
+    }
+    .uyunicon {
+      display: none;
+    }
+  }
+  .ticket-forms-relation-list {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid @border-color;
+  }
+  .ticket-forms-relation-title {
+    font-size: 16px;
+    color: @text-color;
+  }
+  .ticket-forms-relation-info {
+    margin-top: 5px;
+    color: @text-color;
+    span {
+      color: @text-color;
+    }
+    .ticket-forms-relation-icon {
+      float: right;
+      color: @text-color;
+      cursor: pointer;
+    }
+  }
+
+  .ticket-forms-relate-button {
+    margin: 5px 0 12px 0;
+    width: 86px;
+    height: 32px;
+    i.iconfont {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .uyunicon-plus:before {
+      vertical-align: -1px;
+      font-size: 20px;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .ticket-forms-merge-button {
+    margin: 5px 0 12px 0;
+  }
+}
+.ticket-froms-relevance-popover {
+  .u4-popover-inner-content {
+    padding: 0;
+  }
+
+  .u4-popover-content .u4-popover-inner {
+    background: @page-bg;
+  }
+  .ticket-forms-content-wrap {
+    position: static;
+    background: @page-bg;
+  }
+  .ticket-forms-search-relate {
+    position: relative;
+    padding: 8px 16px;
+    .ticket-forms-search {
+      width: 230px;
+      padding-left: 25px;
+      height: 32px;
+      background: @page-bg;
+    }
+    i.icon-sousuo {
+      position: absolute;
+      left: 16px;
+      z-index: 10;
+      font-size: 16px;
+      line-height: 32px;
+      width: 28px;
+      text-align: center;
+      color: @text-color;
+    }
+  }
+  .ticket-forms-relate-ticket-list {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .ticket-forms-relate-ticket {
+      cursor: pointer;
+      height: 30px;
+      padding-left: 16px;
+      &:hover {
+        background: @page-bg;
+      }
+    }
+    .ticket-forms-relate-ticket-select {
+      cursor: pointer;
+      height: 30px;
+      padding-left: 16px;
+      background-color: @page-bg;
+    }
+    .ticket-forms-item-text {
+      margin-left: 10px;
+      font-size: 13px;
+      color: @text-color;
+      vertical-align: -webkit-baseline-middle;
+    }
+  }
+  .ticket-forms-bottom-button {
+    height: 40px;
+    background-color: @page-bg;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px rgba(99, 99, 99, 0.2);
+    .ticket-forms-confirm-btn {
+      float: right;
+      margin-right: 10px;
+      margin-top: 6px;
+    }
+  }
+}

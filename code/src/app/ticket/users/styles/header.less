@@ -1,0 +1,32 @@
+@import '~@uyun/everest-styles/index';
+
+.ticket-user-modal-header-wrap {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 10px;
+  background: @page-bg;
+  border: 1px solid @border-color;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  .tag-wrap {
+    display: inline-block;
+    line-height: 20px;
+    height: 22px;
+    padding: 0 8px;
+    border-radius: 2px;
+    border: 1px solid @border-color;
+    background: @page-bg;
+    font-size: 12px;
+    -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    opacity: 1;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    i {
+      margin-left: 8px;
+      color: @text-color;
+    }
+  }
+}

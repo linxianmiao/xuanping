@@ -1,0 +1,68 @@
+@import '~@uyun/everest-styles/index';
+
+.list-select-component {
+  line-height: 28px;
+  .u4-tabs-bar {
+    border-bottom-color: @border-color;
+  }
+  .col-form-item-label {
+    text-align: right;
+    &:after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+  .ajax-wrap {
+    border: 1px solid @border-color;
+    padding: 15px;
+  }
+  .ajax-wrap-item {
+    margin-bottom: 10px;
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+
+  .outside-data-raw {
+    width: 400px;
+    border: 1px solid #d5ddeb;
+    min-height: 125px;
+  }
+}
+.list-select-component.u4-tabs-card,
+.outside-data-body {
+  > .u4-tabs-bar {
+    .u4-tabs-tab {
+      background: transparent;
+      border: none;
+      color: @text-color;
+    }
+    .u4-tabs-tab-active {
+      background: @header-bg;
+      color: @active-color;
+    }
+  }
+}
+.custom-options-item {
+  .u4-col-21 > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+.list-select-outside-data {
+  .u4-row {
+    margin-bottom: 15px;
+  }
+}
+.list-select-custom-options,
+.list-select-outside-data {
+  .u4-col-3 {
+    color: @text-color;
+  }
+}

@@ -1,0 +1,37 @@
+@import '~@uyun/everest-styles/index';
+@import "~@uyun/components/lib/style/mixins/scrollbar";
+
+
+.itsm-component-filter-fields-popover{
+  .ticket-expansion-filter-list-wrap{
+    max-height: 400px;
+    overflow-y: auto;
+    .small-scrollbar;
+    .classification-filter-wrap{
+        width: 240px;
+        h3{
+            color: @text-color;
+            font-weight: 600;
+            margin-bottom: 5px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid @border-color;
+        }
+        .list-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            div{
+                width: 120px;
+                margin-bottom: 5px;
+                .u4-checkbox + span{
+                    padding-right:0;
+                }
+                span.shenglue{
+                    width: 90px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '~@uyun/everest-styles/index';
+@import '~@uyun/components/lib/style/mixins/scrollbar';
+
+.handle-list {
+  position: relative;
+  height: 100%;
+  .handles-header {
+    line-height: 32px;
+    height: 32px;
+  }
+  .handles-section {
+    height: ~'calc(100% - 32px)';
+    .scenes-list {
+      width: 225px;
+      height: 100%;
+      float: left;
+    }
+    .rules-wrap {
+      height: 100%;
+      width: ~'calc(100% - 225px)';
+      margin-left: 225px;
+      overflow: hidden;
+      :global {
+        .u4-card-body-wrapper {
+          height: ~'calc(100% - 43px)';
+          overflow-y: auto;
+          .small-scrollbar;
+        }
+      }
+      .rule-search-article {
+        display: flex;
+        padding: 8px 0;
+        justify-content: space-between;
+      }
+    }
+  }
+  .table-operation {
+    color: @text-color;
+    :global {
+      a {
+        position: relative;
+        padding: 0 8px;
+        cursor: pointer;
+        &.disabled {
+          cursor: no-drop;
+          color: @text-color;
+        }
+        &:after {
+          position: absolute;
+          content: '|';
+          right: 0;
+          top: -2px;
+          color: @text-color;
+        }
+      }
+      a:last-child:after {
+        display: none;
+      }
+    }
+  }
+}

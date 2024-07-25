@@ -1,0 +1,20 @@
+{
+  "name": "workflow",
+  "dependencies": ["itsm"],
+  "category": [],
+  "lang": {
+    "zh_CN": {
+      "title": "流程工作台",
+      "desc": "流程工作台"
+    },
+    "en_US": {
+      "title": "workflowManagement",
+      "desc": "workflow"
+    }
+  },
+  "height": 500,
+  "width": 12,
+  "target": {
+    "widget": "./index.js"
+  }
+}

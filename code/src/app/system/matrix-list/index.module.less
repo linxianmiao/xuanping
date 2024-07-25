@@ -1,0 +1,15 @@
+@import '~@uyun/everest-styles/index';
+
+.system-matrix-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.system-matrix-list-operation {
+  :global {
+    a.disabled {
+      color: @disabled-color;
+      cursor: no-drop;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "itsm/workflow",
+  "path": "/itsm",
+  "dependencies": [],
+  "category": [],
+  "lang": {
+    "zh_CN": {
+      "title": "流程工作区",
+      "desc": "提供给低代码的流程工作区"
+    },
+    "en_US": {
+      "title": "workflow",
+      "desc": "lowcode workflow"
+    }
+  },
+  "height": 500
+}

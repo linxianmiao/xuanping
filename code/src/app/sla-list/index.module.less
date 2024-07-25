@@ -1,0 +1,64 @@
+
+.more-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 10px;
+  color: @text-color;
+  line-height: 32px;
+
+  &.active {
+    background: @header-bg;
+    border: 1px solid @border-color;
+    border-bottom: 2px solid @header-bg;
+    color: @link-color;
+    margin-bottom: -1px;
+
+    :global {
+      i.iconfont {
+        transform: rotate(180deg) scale(0.7);
+      }
+    }
+  }
+
+  :global {
+    i,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    i {
+      transition: all 0.3s;
+      transform: scale(0.7);
+    }
+  }
+}
+
+.more-wrap {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  background: @header-bg;
+  border: 1px solid @border-color;
+  border-radius: 2px;
+
+  .btns {
+    text-align: right;
+  }
+}
+
+.expanded-Row {
+  :global {
+    .u4-form-item-control-wrapper{
+      line-height: 32px;
+    }
+    .trigger-expanded-row-name{
+        &.success{
+            color: #30d85c;
+        }
+        &.falure{
+            color: #ff0000;
+        }
+    }
+  }
+}

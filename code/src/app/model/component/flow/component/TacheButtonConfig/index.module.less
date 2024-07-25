@@ -1,0 +1,45 @@
+@import '~@uyun/everest-styles/index';
+
+.button-wrapper {
+  position: relative;
+
+  :global {
+    .icon1,
+    .icon2 {
+      display: inline-block;
+      margin-right: 8px;
+      height: 32px;
+      width: 32px;
+      text-align: center;
+      line-height: 30px;
+      vertical-align: -2px;
+    }
+    .icon1 {
+      color: #39cd69;
+      border: 1px solid @border-color;
+    }
+    .icon2 {
+      color: #e3484e;
+      border: 1px solid @border-color;
+    }
+    .icon-zhongmingming {
+      color: @link-color;
+    }
+  }
+
+  .new-name {
+    color: @text-color;
+    margin-right: 5px;
+    vertical-align: 1px;
+  }
+
+  .rollback-wrapper {
+    padding-left: 23px;
+
+    .rollback-content {
+      padding: 18px 0 0 18px;
+      background: @page-bg;
+      border: 1px solid @border-color;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '~@uyun/everest-styles/index';
+
+.user-picker-wrap {
+  display: flex;
+  margin-top: 3px;
+  &.disabled {
+    flex-wrap: wrap;
+  }
+  button {
+    margin-left: 5px;
+  }
+  .table {
+    :global {
+      .u4-pagination.mini {
+        .u4-pagination-item:not(.u4-pagination-item-active),
+        .u4-pagination-jump-prev,
+        .u4-pagination-jump-next {
+          display: none;
+        }
+      }
+    }
+  }
+}

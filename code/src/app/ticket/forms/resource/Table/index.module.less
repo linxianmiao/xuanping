@@ -1,0 +1,26 @@
+@import '~@uyun/everest-styles/index';
+
+.total {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  line-height: 32px;
+  color: @text-color;
+
+  :global {
+    i {
+      font-weight: bold;
+      color: @link-color;
+    }
+  }
+}
+
+:global {
+  .forms-field-table-inner {
+    .u4-table-empty {
+      .u4-table-body {
+        overflow: hidden !important;
+      }
+    }
+  }
+}

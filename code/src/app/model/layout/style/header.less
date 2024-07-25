@@ -1,0 +1,32 @@
+@import '~@uyun/everest-styles/index';
+
+.model-header {
+  height: 41px;
+  line-height: 41px;
+  border-bottom: 1px solid @divider-color;
+  overflow: hidden;
+  position: relative;
+  .model-header-btn {
+    text-align: center;
+    font-size: 14px;
+    color: @text-color;
+    span {
+      display: inline-block;
+      height: 40px;
+      padding: 0px 20px;
+      cursor: pointer;
+      box-sizing: border-box;
+      border-bottom: 2px solid transparent;
+      &.active {
+        color: @link-color;
+        border-bottom-color: @link-color;
+      }
+    }
+  }
+  .model-header-version {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    width: 200px;
+  }
+}
